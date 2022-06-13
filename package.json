@@ -5,9 +5,15 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "start": "run-p dev:*",
+    "build": "run-s build:*",
+    "test": "run-s test:*",
+    "dev:webapp": "nx serve webapp",
+    "dev:api": "nx serve api",
+    "build:wevapp": "nx build webapp",
+    "build:api": "nx build api",
+    "test:webapp": "nx test webapp",
+    "test:api": "nx test api"
   },
   "private": true,
   "dependencies": {
@@ -56,6 +62,7 @@
     "eslint-plugin-cypress": "^2.10.3",
     "jest": "27.5.1",
     "jest-preset-angular": "~11.1.2",
+    "npm-run-all": "^4.1.5",
     "nx": "14.2.4",
     "prettier": "^2.6.2",
     "ts-jest": "27.1.4",
