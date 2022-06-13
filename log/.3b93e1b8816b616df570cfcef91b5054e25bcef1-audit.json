@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "log/.3b93e1b8816b616df570cfcef91b5054e25bcef1-audit.json",
+    "files": [
+        {
+            "date": 1655118990007,
+            "name": "log/angular-nest-full-stack-error-2022-06-13.log",
+            "hash": "fc181e1e33b7eef2e6a940864d3027d9bf16d0dd081e203acaa288d992a7629b"
+        }
+    ],
+    "hashType": "sha256"
+}

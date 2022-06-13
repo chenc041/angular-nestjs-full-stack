@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "log/.f5e42730ee0115550eabf84946f68f413ee493a3-audit.json",
+    "files": [
+        {
+            "date": 1655118990004,
+            "name": "log/angular-nest-full-stack-info-2022-06-13.log",
+            "hash": "ab62d7be8fd80f8b79bd8ffa0e0faa423f26ad8fc50530382545e3e20a5c8d40"
+        }
+    ],
+    "hashType": "sha256"
+}
