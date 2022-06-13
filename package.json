@@ -2,6 +2,14 @@
   "name": "angular-nest-full-stack",
   "version": "0.0.0",
   "license": "MIT",
+  "keywords": [
+    "nest",
+    "angular",
+    "nx",
+    "typescript",
+    "monorepo"
+  ],
+  "description": "An angular and nest full stack monorepo template with nx",
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
@@ -14,6 +22,18 @@
     "build:api": "nx build api",
     "test:webapp": "nx test webapp",
     "test:api": "nx test api"
+  },
+  "author": {
+    "email": "double_cl@163.com",
+    "name": "chenc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenc041/angular-nest-full-stack"
+  },
+  "bugs": {
+    "email": "double_cl@163.com",
+    "url": "https://github.com/chenc041/angular-nest-full-stack/issues"
   },
   "private": true,
   "dependencies": {
