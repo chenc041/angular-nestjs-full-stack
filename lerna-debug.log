@@ -1,0 +1,12 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [ '@nestjs/serve-static' ],
+0 silly argv   lernaVersion: '5.1.4',
+0 silly argv   '$0': '/Users/f2e/.config/yarn/global/node_modules/.bin/lerna',
+0 silly argv   pkg: 'root/api'
+0 silly argv }
+1 notice cli v5.1.4
+2 verbose rootPath /Users/f2e/Desktop/study/angular-nest-full-stack
+3 info versioning independent
+4 error Error: An unknown git error occurred
+4 error     at makeError (/Users/f2e/Desktop/study/angular-nest-full-stack/node_modules/.pnpm/@npmcli+git@3.0.1/node_modules/@npmcli/git/lib/make-error.js:28:13)
