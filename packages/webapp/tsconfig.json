@@ -23,7 +23,7 @@
       "dom"
     ],
     "paths": {
-      "~/*": ["src/app/*"]
+      "~/*": ["src/*"]
     }
   },
   "angularCompilerOptions": {

@@ -39,3 +39,6 @@ testem.log
 Thumbs.db
 
 .angular
+
+/packages/api/client
+lerna-debug.log
