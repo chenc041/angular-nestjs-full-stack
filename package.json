@@ -10,8 +10,8 @@
     "build": "run-s build:*",
     "dev:webapp": "cd ./packages/webapp && pnpm run start",
     "dev:api": "cd ./packages/api && pnpm run start:debug",
-    "build:api": "lerna run build",
     "build:webapp": "lerna run build",
+    "build:api": "lerna run build",
     "bootstrap": "lerna bootstrap --hoist"
   }
 }
