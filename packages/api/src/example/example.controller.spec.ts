@@ -4,7 +4,7 @@ import { TypeOrmTestingModule } from '~/typeOrmTestingModule';
 import { ExampleService } from '~/example/example.service';
 import { UserEntity } from '~/entities/user.entity';
 
-describe('AppController', () => {
+describe('ExampleController', () => {
   let appController: ExampleController;
 
   beforeEach(async () => {
@@ -18,7 +18,7 @@ describe('AppController', () => {
   describe('login', () => {
     it('should have property access_token', async () => {
       const result = await appController.login({ userId: 1, username: '12' });
-      expect(result).toHaveProperty('access_token');
+      expect(result.access_token).toBeDefined();
     });
   });
 });
