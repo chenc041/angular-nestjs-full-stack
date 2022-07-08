@@ -8,9 +8,7 @@ import * as pkg from 'package.json';
 export class TypeOrmConfigService implements TypeOrmOptionsFactory {
   constructor(private readonly configService: ConfigService) {}
 
-  createTypeOrmOptions(
-    connectionName?: string,
-  ): Promise<TypeOrmModuleOptions> | TypeOrmModuleOptions {
+  createTypeOrmOptions(connectionName?: string): Promise<TypeOrmModuleOptions> | TypeOrmModuleOptions {
     return {
       type: 'mysql',
       timezone: '+08:00',

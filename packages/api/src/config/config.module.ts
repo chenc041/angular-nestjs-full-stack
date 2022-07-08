@@ -19,13 +19,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     }),
     LoadEnvModule.forRoot({
       isGlobal: true,
-      envFilePath: [
-        join(
-          __dirname,
-          '..',
-          `../../env/.${process.env.NODE_ENV || 'development'}.env`,
-        ),
-      ],
+      envFilePath: [join(__dirname, '..', `../../env/.${process.env.NODE_ENV || 'development'}.env`)],
     }),
     PassportModule.register({ defaultStrategy: 'jwt' }),
     WinstonModule.forRootAsync({

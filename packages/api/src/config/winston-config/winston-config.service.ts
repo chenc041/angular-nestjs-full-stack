@@ -1,12 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import * as winston from 'winston';
 import 'winston-daily-rotate-file';
-import {
-  WinstonModuleOptionsFactory,
-  WinstonModuleOptions,
-} from 'nest-winston';
-import * as pkg from 'package.json';
-
+import { WinstonModuleOptionsFactory, WinstonModuleOptions } from 'nest-winston';
 const { json, timestamp, combine } = winston.format;
 
 @Injectable()
@@ -23,7 +18,7 @@ export class WinstonConfigService implements WinstonModuleOptionsFactory {
         maxFiles: '14d',
         zippedArchive: true,
         datePattern: 'YYYY-MM-DD',
-        filename: `log/${pkg.name}-info-%DATE%.log`,
+        filename: `log/api-info-%DATE%.log`,
       });
 
       const fileErrorTransport = new winston.transports.DailyRotateFile({
@@ -32,7 +27,7 @@ export class WinstonConfigService implements WinstonModuleOptionsFactory {
         maxFiles: '14d',
         zippedArchive: true,
         datePattern: 'YYYY-MM-DD',
-        filename: `log/${pkg.name}-error-%DATE%.log`,
+        filename: `log/api-error-%DATE%.log`,
       });
       transports.push(fileInfoTransport);
       transports.push(fileErrorTransport);
@@ -41,7 +36,7 @@ export class WinstonConfigService implements WinstonModuleOptionsFactory {
       transports: transports,
       format: combine(timestamp(), json()),
       defaultMeta: {
-        appName: pkg.name,
+        appName: 'api',
       },
     };
   }

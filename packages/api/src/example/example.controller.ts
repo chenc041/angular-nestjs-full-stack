@@ -19,7 +19,6 @@ export class ExampleController {
 
   @Post('login')
   login(@Body() login: LoginDto) {
-    console.log(login, 'login');
     return this.jwt.login(login);
   }
 
