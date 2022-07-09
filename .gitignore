@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+packages/api/log/*
 
 # dependencies
 node_modules
