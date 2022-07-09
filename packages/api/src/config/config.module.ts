@@ -11,6 +11,9 @@ import { join } from 'path';
 import { TypeOrmConfigService } from '~/config/typeorm-config/typeorm-config.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
+const { register: jwtRegister } = JwtModule;
+const { register: PassportRegister } = PassportModule;
+
 @Global()
 @Module({
   imports: [
@@ -19,13 +22,13 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     }),
     LoadEnvModule.forRoot({
       isGlobal: true,
-      envFilePath: [join(__dirname, '..', `../../env/.${process.env.NODE_ENV || 'development'}.env`)],
+      envFilePath: [join(__dirname, '..', `../../api/env/.${process.env.NODE_ENV || 'development'}.env`)],
     }),
-    PassportModule.register({ defaultStrategy: 'jwt' }),
+    PassportRegister({ defaultStrategy: 'jwt' }),
     WinstonModule.forRootAsync({
       useClass: WinstonConfigService,
     }),
-    JwtModule.register({
+    jwtRegister({
       secret: jwtConstants.secret,
       signOptions: { expiresIn: '10h' },
     }),
