@@ -3,12 +3,14 @@ lockfileVersion: 5.4
 specifiers:
   '@angular-devkit/build-angular': ^14.0.5
   '@angular/animations': ^14.0.5
+  '@angular/cdk': 14.0.4
   '@angular/cli': ~14.0.5
   '@angular/common': ^14.0.5
   '@angular/compiler': ^14.0.5
   '@angular/compiler-cli': ^14.0.5
   '@angular/core': ^14.0.5
   '@angular/forms': ^14.0.5
+  '@angular/material': 14.0.4
   '@angular/platform-browser': ^14.0.5
   '@angular/platform-browser-dynamic': ^14.0.5
   '@angular/router': ^14.0.5
@@ -31,10 +33,12 @@ specifiers:
 
 dependencies:
   '@angular/animations': 14.0.5_@angular+core@14.0.5
+  '@angular/cdk': 14.0.4_up4ahvy7h7pludtfht5f75kszu
   '@angular/common': 14.0.5_dzujbj7drp6g2oxeynnik3virq
   '@angular/compiler': 14.0.5_@angular+core@14.0.5
   '@angular/core': 14.0.5_rxjs@7.5.5+zone.js@0.11.6
   '@angular/forms': 14.0.5_wyhyq3insgmltow5sqaabp6jgu
+  '@angular/material': 14.0.4_zuqzc5vo5mwbumqhimhjyhwdfa
   '@angular/platform-browser': 14.0.5_iw6whprzu3c6qqw5ps72nnedmu
   '@angular/platform-browser-dynamic': 14.0.5_zivgksezxddppse4yo6zg2q33u
   '@angular/router': 14.0.5_wyhyq3insgmltow5sqaabp6jgu
@@ -244,6 +248,21 @@ packages:
       tslib: 2.4.0
     dev: false
 
+  /@angular/cdk/14.0.4_up4ahvy7h7pludtfht5f75kszu:
+    resolution: {integrity: sha512-zPM4VZadoKzTF9TZ7Yx5gJ7GtQpt62f8ofdH/BF2atG+TaNzOEFqtzogP4WuJDFAxJXOPMePobhth4YjUk0Wbw==}
+    peerDependencies:
+      '@angular/common': ^14.0.0 || ^15.0.0
+      '@angular/core': ^14.0.0 || ^15.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/common': 14.0.5_dzujbj7drp6g2oxeynnik3virq
+      '@angular/core': 14.0.5_rxjs@7.5.5+zone.js@0.11.6
+      rxjs: 7.5.5
+      tslib: 2.4.0
+    optionalDependencies:
+      parse5: 5.1.1
+    dev: false
+
   /@angular/cli/14.0.5:
     resolution: {integrity: sha512-/Iqvy3vRqakHdxNi+Qo18xXQr8E1cCaKzMBnxR2wHNdlu1lyaw0p20E8LumoueXCrs+/SK6aKDvN6ek0R/q8Jg==}
     engines: {node: ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
@@ -345,6 +364,27 @@ packages:
     dependencies:
       '@angular/common': 14.0.5_dzujbj7drp6g2oxeynnik3virq
       '@angular/core': 14.0.5_rxjs@7.5.5+zone.js@0.11.6
+      '@angular/platform-browser': 14.0.5_iw6whprzu3c6qqw5ps72nnedmu
+      rxjs: 7.5.5
+      tslib: 2.4.0
+    dev: false
+
+  /@angular/material/14.0.4_zuqzc5vo5mwbumqhimhjyhwdfa:
+    resolution: {integrity: sha512-Ysz6oPbpLH7CvRR6oxQwpUImSbFqxL4+eiH0LPc7vkaOSrvGdZ/7cWhAfT6hVnw3bEY+eq5qBSMgyVUB44z4eg==}
+    peerDependencies:
+      '@angular/animations': ^14.0.0 || ^15.0.0
+      '@angular/cdk': 14.0.4
+      '@angular/common': ^14.0.0 || ^15.0.0
+      '@angular/core': ^14.0.0 || ^15.0.0
+      '@angular/forms': ^14.0.0 || ^15.0.0
+      '@angular/platform-browser': ^14.0.0 || ^15.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/animations': 14.0.5_@angular+core@14.0.5
+      '@angular/cdk': 14.0.4_up4ahvy7h7pludtfht5f75kszu
+      '@angular/common': 14.0.5_dzujbj7drp6g2oxeynnik3virq
+      '@angular/core': 14.0.5_rxjs@7.5.5+zone.js@0.11.6
+      '@angular/forms': 14.0.5_wyhyq3insgmltow5sqaabp6jgu
       '@angular/platform-browser': 14.0.5_iw6whprzu3c6qqw5ps72nnedmu
       rxjs: 7.5.5
       tslib: 2.4.0
@@ -5671,6 +5711,12 @@ packages:
     dependencies:
       parse5: 6.0.1
     dev: true
+
+  /parse5/5.1.1:
+    resolution: {integrity: sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==}
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /parse5/6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
