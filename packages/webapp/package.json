@@ -6,7 +6,8 @@
     "start": "ng serve --hmr",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --no-watch",
+    "test": "ng test",
+    "test:coverage": "ng test --code-coverage",
     "analyzer": "ng build -c analyzer --stats-json && npx webpack-bundle-analyzer ../api/client/stats.json"
   },
   "private": true,
