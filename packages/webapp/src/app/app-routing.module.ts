@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { environment } from '~/environments/environment';
-
-const routes: Routes = [];
+import { routes } from '~/app/routes';
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { enableTracing: !environment.production })],

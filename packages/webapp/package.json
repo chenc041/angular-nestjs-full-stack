@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --hmr",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --no-watch",
     "analyzer": "ng build -c analyzer --stats-json && npx webpack-bundle-analyzer ../api/client/stats.json"
   },
   "private": true,
