@@ -21,6 +21,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@main
 
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+
       - name: test-api
         run: cd packages/api && pnpm i && pnpm run test
 
