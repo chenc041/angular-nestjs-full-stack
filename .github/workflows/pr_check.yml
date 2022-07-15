@@ -23,5 +23,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - name: test-webapp
-        run: cd /packages/webapp && pnpm i && pnpm run test
+        run: cd ./packages/webapp && pnpm i && pnpm run test
 
