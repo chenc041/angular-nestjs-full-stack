@@ -5,7 +5,13 @@ import { Column, Entity } from 'typeorm';
 export class UserEntity extends BaseEntity {
   @Column({
     type: 'varchar',
-    length: 128,
+    length: 64,
   })
   name: string;
+
+  @Column({
+    type: 'varchar',
+    length: 128,
+  })
+  password: string;
 }
