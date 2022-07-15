@@ -10,8 +10,6 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - name: install
-        run: npm install pnpm -g
 
       - name: setup node
         uses: actions/setup-node@v3
