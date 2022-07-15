@@ -22,6 +22,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+
       - name: test-webapp
-        run: cd ./packages/webapp && pnpm i && pnpm run test -- --watch=false --browsers=ChromeHeadless
+        run: cd ./packages/webapp && pnpm i && pnpm run test
+
+      - name: test-api
+        run: cd ../api && pnpm i && pnpm run test
 
