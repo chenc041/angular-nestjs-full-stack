@@ -12,6 +12,6 @@
     "dev:api": "cd ./packages/api && pnpm run start:debug",
     "build:webapp": "lerna run build",
     "build:api": "lerna run build",
-    "bootstrap": "lerna bootstrap --hoist"
+    "bootstrap": "lerna bootstrap"
   }
 }
