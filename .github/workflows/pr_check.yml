@@ -27,5 +27,5 @@ jobs:
         run: cd ./packages/webapp && pnpm i && pnpm run test
 
       - name: test-api
-        run: cd ../api && pnpm i && pnpm run test
+        run: cd ./packages/api && pnpm i && pnpm run test
 
