@@ -15,16 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
-      - name: test-api
-        run: cd ./packages/api && pnpm i && pnpm run test
-
-      - name: test-webapp
-        run: cd ../webapp && pnpm add @angular/cli -g && pnpm i && pnpm run test
+      with:
+        version: 7
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'pnpm'
+        - name: Install dependencies
+          run: pnpm install
 
