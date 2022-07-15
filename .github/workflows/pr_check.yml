@@ -9,24 +9,22 @@ on:
 jobs:
   test-job:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 16 ]
     steps:
-
-      - name: setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: checkout
-        uses: actions/checkout@main
-
-      - name: setup pnpm
-        uses: pnpm/action-setup@v2.2.2
+      - uses: actions/checkout@v2
+      - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
-
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: test-api
-        run: cd packages/api && pnpm i && pnpm run test
+        run: cd ./packages/api && pnpm i && pnpm run test
 
       - name: test-webapp
-        run: cd ../webapp && pnpm i && pnpm run test
+        run: cd ../webapp && pnpm add @angular/cli -g && pnpm i && pnpm run test
 
