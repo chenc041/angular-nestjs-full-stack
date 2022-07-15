@@ -22,6 +22,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
-      - name: test
-        run: pnpm i && pnpm run bootstrap && pnpm run test
+      - name: test-webapp
+        run: cd /packages/webapp && pnpm i && pnpm run test
 
