@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
+      - name: version
+
         run: pnpm --version && node -v
 
       - name: test-webapp
