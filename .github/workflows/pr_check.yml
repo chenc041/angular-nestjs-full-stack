@@ -10,14 +10,14 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
+      - name: install
+        run: npm install pnpm -g
+
       - name: setup node
         uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'pnpm'
-
-      - name: install
-        run: npm install pnpm -g
 
       - name: checkout
         uses: actions/checkout@main
