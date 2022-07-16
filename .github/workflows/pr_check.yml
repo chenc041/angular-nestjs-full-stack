@@ -24,7 +24,7 @@ jobs:
           cache: 'pnpm'
 
       - name: test-webapp
-        run: cd ./packages/webapp && pnpm i && pnpm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+        run: cd ./packages/webapp && pnpm i && pnpm run test --no-watch --no-progress --browsers=ChromeHeadlessCI
 
       - name: test-api
         run: cd ./packages/api && pnpm i --no-lockfile && pnpm run test
