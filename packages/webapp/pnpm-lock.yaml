@@ -22,6 +22,7 @@ specifiers:
   karma-coverage: ~2.2.0
   karma-jasmine: ~5.1.0
   karma-jasmine-html-reporter: ~2.0.0
+  karma-verbose-reporter: ^0.0.8
   npm-run-all: ^4.1.5
   postcss: ^8.4.14
   rxjs: ~7.5.6
@@ -58,6 +59,7 @@ devDependencies:
   karma-coverage: 2.2.0
   karma-jasmine: 5.1.0_karma@6.4.0
   karma-jasmine-html-reporter: 2.0.0_35xfcd27rmehxjiuufzsmgfmge
+  karma-verbose-reporter: 0.0.8_karma@6.4.0
   npm-run-all: 4.1.5
   postcss: 8.4.14
   tailwindcss: 3.1.6
@@ -2876,6 +2878,11 @@ packages:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
     dev: true
 
+  /colors/1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==}
+    engines: {node: '>=0.1.90'}
+    dev: true
+
   /commander/2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
@@ -4784,6 +4791,15 @@ packages:
     resolution: {integrity: sha512-RsBECncGO17KAoJCYXjv+ckIz+Ii9NCi+9enk+rq6XC81ezYkb4/RHE6CTXdA7IOJqoF3wcaLfVG0CPmE5ca6A==}
     dependencies:
       source-map-support: 0.5.21
+    dev: true
+
+  /karma-verbose-reporter/0.0.8_karma@6.4.0:
+    resolution: {integrity: sha512-wHgevIcEpfgKwR3CnWd8t1ErzWeVlctO7ZtXkKFR1inb006ogz+7ZKg95eIVOnHCYWL3Gdy1dRMOGjVP0n4MlA==}
+    peerDependencies:
+      karma: '>=0.12'
+    dependencies:
+      colors: 1.4.0
+      karma: 6.4.0
     dev: true
 
   /karma/6.4.0:
