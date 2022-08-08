@@ -14,6 +14,7 @@ async function bootstrap() {
   app.setGlobalPrefix('/api/v1');
   await app.listen(3000);
 }
+
 bootstrap().then(() => {
   return Logger.log('this api server is running at: http://localhost:3000');
 });
