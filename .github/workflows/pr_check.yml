@@ -24,7 +24,7 @@ jobs:
           cache: 'pnpm'
 
       - name: install dep
-        run: pnpm run bootstrap --no-lockfile
+        run: pnpm i --no-lockfile && lerna run bootstrap
 
       - name: test webapp
         run: cd ./packages/webapp && pnpm run test --no-watch --browsers=ChromeHeadless --reporters=verbose
