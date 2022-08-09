@@ -23,16 +23,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
 
-      - name: install dep
-        run: pnpm i --no-lockfile && lerna run bootstrap
+      - name: test-webapp
+        run: cd ./packages/webapp && pnpm i && pnpm run test --no-watch --browsers=ChromeHeadless --reporters=verbose
 
-      - name: test webapp
-        run: cd ./packages/webapp && pnpm run test --no-watch --browsers=ChromeHeadless --reporters=verbose
-
-      - name: test api app
-        run: cd ./packages/api && pnpm run test
-
-
-      - name: api e2e-test
-        run: cd ./packages/api && pnpm run test:test
+      - name: test-api
+        run: cd ./packages/api && pnpm i --no-lockfile && pnpm run test && pnpm run test:e2e
 
