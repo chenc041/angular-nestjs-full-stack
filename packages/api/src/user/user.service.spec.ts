@@ -19,7 +19,22 @@ describe('UserService', () => {
     service = module.get<UserService>(UserService);
   });
 
+  const create = async () => {
+    return await service.createUser({ username: 'chenc', password: 'chenc' });
+  };
+
   it('should be defined', () => {
     expect(service).toBeDefined();
+  });
+
+  it('should create user success', async () => {
+    const user = await create();
+    expect(user.id).toBeDefined();
+  });
+
+  it('should be find one user', async () => {
+    await create();
+    const user = await service.checkUserIsExist({ username: 'chenc' });
+    expect(user.id).toBeDefined();
   });
 });
