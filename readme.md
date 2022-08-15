@@ -23,7 +23,7 @@ angular and nestjs full stack template
 #### webapp
 - angular
 - sass
-- tailwaind
+- tailwind
 
 ## 🔨Development
 ```shell
