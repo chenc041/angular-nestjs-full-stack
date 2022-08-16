@@ -12,9 +12,10 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
+      transform: true,
     }),
   );
-  app.use(cookieParser('123'));
+  app.use(cookieParser());
   app.setGlobalPrefix('/api/v1');
   await app.listen(port);
 }
