@@ -1,12 +1,12 @@
-<div class="layout">
-  <header class="w-screen fixed top-0 h-10 bg-gray-200 border-b-2">header</header>
-  <div class="flex h-screen">
-    <aside class="menu w-200 shadow bg-white static z-10 shadow-gray-300 shadow-lg">menu</aside>
-    <main class="flex-1 border-1">
+<div class="layout flex justify-start bg-gray-200">
+  <aside class="menu h-screen bg-white shadow-md z-10">menu</aside>
+  <main class="flex h-screen overflow-y-auto flex-col w-screen">
+    <header class="bg-white flex items-center flex-shrink-0 sticky top-0 h-14 border-amber-300 shadow">header</header>
+    <div class="w-screen pl-4 py-2">
       <router-outlet></router-outlet>
-    </main>
-  </div>
-  <footer class="fixed bottom-0 w-screen h-10 bg-black text-center text-white items-center leading-10">
-    <a href="https://github.com/chenc041" rel="noopener" target="_blank">@chenc</a>
-  </footer>
+    </div>
+    <footer class="sticky flex items-center flex-shrink-0 bottom-0 h-14 bg-white text-gray-600 text-center">
+      <a class="w-screen inline-block" href="https://github.com/chenc041" rel="noopener" target="_blank">@chenc</a>
+    </footer>
+  </main>
 </div>
