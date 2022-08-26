@@ -24,7 +24,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
 
       - name: run webapp test
         run: cd ./packages/webapp && pnpm i --no-lockfile && pnpm run test --no-watch --browsers=ChromeHeadless --reporters=verbose

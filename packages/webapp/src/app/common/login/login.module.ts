@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from '~/app/login/login.component';
-import { LoginRoutingModule } from '~/app/login/login-routing.module';
+import { LoginComponent } from '~/app/common/login/login.component';
+import { LoginRoutingModule } from '~/app/common/login/login-routing.module';
 import { CheckboxModule } from 'primeng/checkbox';
 
 @NgModule({
