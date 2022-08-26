@@ -1,2 +1,16 @@
-<div>23</div>
-<router-outlet></router-outlet>
+<div class="layout">
+  <header>
+    <app-header></app-header>
+  </header>
+  <div class="main flex">
+    <aside>
+      <app-menu></app-menu>
+    </aside>
+    <main class="flex-1 border-2">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</div>
