@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { LayoutComponent } from '~/app/layout/layout.component';
 
 export const routes: Routes = [
   {
@@ -8,7 +9,17 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./layout/layout.module').then((m) => m.LayoutModule),
+    redirectTo: 'dashboard',
+  },
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'dashboard',
+        loadChildren: () => import('./core/dashboard/dashboard.module').then((m) => m.DashboardModule),
+      },
+    ],
   },
   {
     path: '**',
