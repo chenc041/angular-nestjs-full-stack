@@ -1,9 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UserController } from './user.controller';
-import { TypeOrmTestingModule } from '~/test-utils';
+import { TypeOrmTestingModule } from '~/test.utils';
 import { UserService } from '~/user/user.service';
 import { UserEntity } from '~/entities/user.entity';
 import { ApiReturnType } from '~/utils';
+import { mockUser } from '~/test.mock.data';
 
 describe('UserController', () => {
   let controller: UserController;
@@ -37,13 +38,13 @@ describe('UserController', () => {
   });
 
   it('user should be create success', async () => {
-    const result = await register({ username: 'chenc', password: 'chenc' });
+    const result = await register(mockUser);
     expect(result.data.id).toBeDefined();
   });
 
   it('should be login success', async () => {
-    await register({ username: 'chenc', password: 'chenc' });
-    const result = await login({ username: 'chenc', password: 'chenc' });
+    await register(mockUser);
+    const result = await login(mockUser);
     expect(result.data.access_token).toBeDefined();
   });
 });
