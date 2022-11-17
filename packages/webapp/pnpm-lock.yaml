@@ -22,6 +22,7 @@ specifiers:
   karma-coverage: ~2.2.0
   karma-jasmine: ~5.1.0
   karma-jasmine-html-reporter: ~2.0.0
+  karma-spec-reporter: ^0.0.34
   karma-verbose-reporter: ^0.0.8
   ng-zorro-antd: ^14.1.1
   npm-run-all: ^4.1.5
@@ -61,6 +62,7 @@ devDependencies:
   karma-coverage: 2.2.0
   karma-jasmine: 5.1.0_karma@6.4.1
   karma-jasmine-html-reporter: 2.0.0_uk6l45dlsjldsnfgnal4othgyq
+  karma-spec-reporter: 0.0.34_karma@6.4.1
   karma-verbose-reporter: 0.0.8_karma@6.4.1
   npm-run-all: 4.1.5
   postcss: 8.4.17
@@ -4880,6 +4882,15 @@ packages:
     resolution: {integrity: sha512-RsBECncGO17KAoJCYXjv+ckIz+Ii9NCi+9enk+rq6XC81ezYkb4/RHE6CTXdA7IOJqoF3wcaLfVG0CPmE5ca6A==}
     dependencies:
       source-map-support: 0.5.21
+    dev: true
+
+  /karma-spec-reporter/0.0.34_karma@6.4.1:
+    resolution: {integrity: sha512-l5H/Nh9q4g2Ysx2CDU2m+NIPyLQpCVbk9c4V02BTZHw3NM6RO1dq3eRpKXCSSdPt4RGfhHk8jDt3XYkGp+5PWg==}
+    peerDependencies:
+      karma: '>=0.9'
+    dependencies:
+      colors: 1.4.0
+      karma: 6.4.1
     dev: true
 
   /karma-verbose-reporter/0.0.8_karma@6.4.1:

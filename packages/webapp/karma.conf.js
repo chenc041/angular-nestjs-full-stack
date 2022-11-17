@@ -11,7 +11,7 @@ module.exports = function (config) {
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma'),
-      require('karma-verbose-reporter'),
+      require('karma-spec-reporter'),
     ],
     client: {
       jasmine: {
@@ -20,6 +20,7 @@ module.exports = function (config) {
         // for example, you can disable the random execution with `random: false`
         // or set a specific seed with `seed: 4321`
       },
+      captureConsole: false,
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
     jasmineHtmlReporter: {
@@ -30,7 +31,7 @@ module.exports = function (config) {
       subdir: '.',
       reporters: [{ type: 'html' }, { type: 'text-summary' }],
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml', 'spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
