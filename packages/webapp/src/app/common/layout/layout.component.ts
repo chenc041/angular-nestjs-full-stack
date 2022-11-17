@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-layout',
-  templateUrl: './layout.component.html',
+  standalone: true,
+  template: ` <router-outlet></router-outlet>`,
   styles: [
     `
       .menu {
@@ -12,8 +14,9 @@ import { Component, OnInit } from '@angular/core';
       }
     `,
   ],
+  imports: [RouterOutlet],
 })
-export class LayoutComponent implements OnInit {
+export default class LayoutComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

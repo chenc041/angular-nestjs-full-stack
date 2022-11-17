@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LoginComponent } from 'src/app/common/login/login.component';
+import LoginComponent from 'src/app/common/login/login.component';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -8,7 +8,7 @@ describe('LoginComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [LoginComponent],
+      imports: [LoginComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(LoginComponent);
