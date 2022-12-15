@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@angular-devkit/build-angular': ^15.0.0
   '@angular/animations': ^15.0.0
-  '@angular/cdk': 15.0.1
+  '@angular/cdk': 15.0.2
   '@angular/cli': ~15.0.0
   '@angular/common': ^15.0.0
   '@angular/compiler': ^15.0.0
@@ -22,7 +22,7 @@ specifiers:
   karma-coverage: ~2.2.0
   karma-jasmine: ~5.1.0
   karma-jasmine-html-reporter: ~2.0.0
-  karma-spec-reporter: ^0.0.35
+  karma-spec-reporter: ^0.0.36
   karma-verbose-reporter: ^0.0.8
   ng-zorro-antd: ^14.1.1
   npm-run-all: ^4.1.5
@@ -36,7 +36,7 @@ specifiers:
 
 dependencies:
   '@angular/animations': 15.0.0_@angular+core@15.0.0
-  '@angular/cdk': 15.0.1_yf4cyveobde6mb2vc3o63677na
+  '@angular/cdk': 15.0.2_yf4cyveobde6mb2vc3o63677na
   '@angular/common': 15.0.0_t4kxfwobplqpj3ty4ovtshjipq
   '@angular/compiler': 15.0.0_@angular+core@15.0.0
   '@angular/core': 15.0.0_rxjs@7.6.0+zone.js@0.12.0
@@ -62,7 +62,7 @@ devDependencies:
   karma-coverage: 2.2.0
   karma-jasmine: 5.1.0_karma@6.4.1
   karma-jasmine-html-reporter: 2.0.0_uk6l45dlsjldsnfgnal4othgyq
-  karma-spec-reporter: 0.0.35_karma@6.4.1
+  karma-spec-reporter: 0.0.36_karma@6.4.1
   karma-verbose-reporter: 0.0.8_karma@6.4.1
   npm-run-all: 4.1.5
   postcss: 8.4.17
@@ -296,8 +296,8 @@ packages:
       parse5: 5.1.1
     dev: false
 
-  /@angular/cdk/15.0.1_yf4cyveobde6mb2vc3o63677na:
-    resolution: {integrity: sha512-yV/nietivRC8JJrEt0M3RXo+4PMk8cReZVhbV0ME6MOehJ7NBw7uIBjfIbLWE9YGEHZi+TCzdxqDuWqH5RCiog==}
+  /@angular/cdk/15.0.2_yf4cyveobde6mb2vc3o63677na:
+    resolution: {integrity: sha512-khTZT/vWDLoCkIxXyrpmeFIMfsED3KdKQqWCiuvUHGHhJn5iOa2wDQXQEkrFpNaQ4v1mbHE2I11DljiieIyv5w==}
     peerDependencies:
       '@angular/common': ^15.0.0 || ^16.0.0
       '@angular/core': ^15.0.0 || ^16.0.0
@@ -4890,8 +4890,8 @@ packages:
       source-map-support: 0.5.21
     dev: true
 
-  /karma-spec-reporter/0.0.35_karma@6.4.1:
-    resolution: {integrity: sha512-ejUIU6yzD2bgcn573ypcRfF1IDnLwkxnSMqXsmmvF/PiOwmQgaLRr8H8blBZmrgxH8qhp+W90Q94h16kEQDWzw==}
+  /karma-spec-reporter/0.0.36_karma@6.4.1:
+    resolution: {integrity: sha512-11bvOl1x6ryKZph7kmbmMpbi8vsngEGxGOoeTlIcDaH3ab3j8aPJnZ+r+K/SS0sBSGy5VGkGYO2+hLct7hw/6w==}
     peerDependencies:
       karma: '>=0.9'
     dependencies:
