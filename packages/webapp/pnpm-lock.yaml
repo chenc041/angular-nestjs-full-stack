@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@angular-devkit/build-angular': ^15.0.0
   '@angular/animations': ^15.0.0
-  '@angular/cdk': 15.0.3
+  '@angular/cdk': 15.1.0
   '@angular/cli': ~15.1.0
   '@angular/common': ^15.0.0
   '@angular/compiler': ^15.0.0
@@ -36,7 +36,7 @@ specifiers:
 
 dependencies:
   '@angular/animations': 15.0.0_@angular+core@15.0.0
-  '@angular/cdk': 15.0.3_7eyvjp4xvg7lupyms4agku6lzm
+  '@angular/cdk': 15.1.0_7eyvjp4xvg7lupyms4agku6lzm
   '@angular/common': 15.0.0_6bfwd3ph3sdhhp7azeptlw637y
   '@angular/compiler': 15.0.0_@angular+core@15.0.0
   '@angular/core': 15.0.0_rxjs@7.8.0+zone.js@0.12.0
@@ -296,8 +296,8 @@ packages:
       parse5: 5.1.1
     dev: false
 
-  /@angular/cdk/15.0.3_7eyvjp4xvg7lupyms4agku6lzm:
-    resolution: {integrity: sha512-iRLV6V6ksIshDL8Cdn1+DUNTRLqj+DAqmYTWYCEvH4qU6o0XSeXrAHNW5zNFqWgCZbmWt03G5jOBWBNaxa9QKw==}
+  /@angular/cdk/15.1.0_7eyvjp4xvg7lupyms4agku6lzm:
+    resolution: {integrity: sha512-6X9k/OT+L6nu1ndKTX4zsSxXR8/C6CyzVY+iIytBUZ8qYaZ6kZ385YlDHyNB9x70GaC5hJkOvR0ZVupz57x0bg==}
     peerDependencies:
       '@angular/common': ^15.0.0 || ^16.0.0
       '@angular/core': ^15.0.0 || ^16.0.0
