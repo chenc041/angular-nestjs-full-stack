@@ -13,6 +13,7 @@ specifiers:
   '@angular/platform-browser': ^15.1.2
   '@angular/platform-browser-dynamic': ^15.1.2
   '@angular/router': ^15.1.2
+  '@ant-design/icons-angular': ^15.0.0
   '@types/jasmine': ~4.3.0
   autoprefixer: ^10.4.12
   cssnano: ^5.1.13
@@ -44,6 +45,7 @@ dependencies:
   '@angular/platform-browser': 15.1.2_d5cqipbc22ng45bbz7rblks63q
   '@angular/platform-browser-dynamic': 15.1.2_nvxdb5l45salvpcyi4ujzyiawy
   '@angular/router': 15.1.2_2e65tvtyrwy7yijl6ersdz3qky
+  '@ant-design/icons-angular': 15.0.0_2e65tvtyrwy7yijl6ersdz3qky
   ng-zorro-antd: 15.0.3_ud6yp24avl754mbgdk4ldgvidq
   rxjs: 7.8.0
   tslib: 2.4.0
