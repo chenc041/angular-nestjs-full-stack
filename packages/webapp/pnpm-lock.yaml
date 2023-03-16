@@ -17,7 +17,7 @@ specifiers:
   '@types/jasmine': ~4.3.0
   autoprefixer: ^10.4.12
   cssnano: ^5.1.13
-  jasmine-core: ~4.5.0
+  jasmine-core: ~4.6.0
   karma: ~6.4.1
   karma-chrome-launcher: ~3.1.1
   karma-coverage: ~2.2.0
@@ -58,12 +58,12 @@ devDependencies:
   '@types/jasmine': 4.3.0
   autoprefixer: 10.4.12_postcss@8.4.17
   cssnano: 5.1.13_postcss@8.4.17
-  jasmine-core: 4.5.0
+  jasmine-core: 4.6.0
   karma: 6.4.1
   karma-chrome-launcher: 3.1.1
   karma-coverage: 2.2.0
   karma-jasmine: 5.1.0_karma@6.4.1
-  karma-jasmine-html-reporter: 2.0.0_uk6l45dlsjldsnfgnal4othgyq
+  karma-jasmine-html-reporter: 2.0.0_vl3unt3t2otf46m2vvwnwo5vau
   karma-spec-reporter: 0.0.36_karma@6.4.1
   karma-verbose-reporter: 0.0.8_karma@6.4.1
   npm-run-all: 4.1.5
@@ -4627,8 +4627,8 @@ packages:
       istanbul-lib-report: 3.0.0
     dev: true
 
-  /jasmine-core/4.5.0:
-    resolution: {integrity: sha512-9PMzyvhtocxb3aXJVOPqBDswdgyAeSB81QnLop4npOpbqnheaTEwPc9ZloQeVswugPManznQBjD8kWDTjlnHuw==}
+  /jasmine-core/4.6.0:
+    resolution: {integrity: sha512-O236+gd0ZXS8YAjFx8xKaJ94/erqUliEkJTDedyE7iHvv4ZVqi+q+8acJxu05/WJDKm512EUNn809In37nWlAQ==}
     dev: true
 
   /jest-worker/27.5.1:
@@ -4727,14 +4727,14 @@ packages:
       - supports-color
     dev: true
 
-  /karma-jasmine-html-reporter/2.0.0_uk6l45dlsjldsnfgnal4othgyq:
+  /karma-jasmine-html-reporter/2.0.0_vl3unt3t2otf46m2vvwnwo5vau:
     resolution: {integrity: sha512-SB8HNNiazAHXM1vGEzf8/tSyEhkfxuDdhYdPBX2Mwgzt0OuF2gicApQ+uvXLID/gXyJQgvrM9+1/2SxZFUUDIA==}
     peerDependencies:
       jasmine-core: ^4.0.0
       karma: ^6.0.0
       karma-jasmine: ^5.0.0
     dependencies:
-      jasmine-core: 4.5.0
+      jasmine-core: 4.6.0
       karma: 6.4.1
       karma-jasmine: 5.1.0_karma@6.4.1
     dev: true
@@ -4745,7 +4745,7 @@ packages:
     peerDependencies:
       karma: ^6.0.0
     dependencies:
-      jasmine-core: 4.5.0
+      jasmine-core: 4.6.0
       karma: 6.4.1
     dev: true
 
