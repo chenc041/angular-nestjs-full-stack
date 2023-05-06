@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@angular-devkit/build-angular': ^15.1.3
   '@angular/animations': ^16.0.0
-  '@angular/cdk': 15.2.3
+  '@angular/cdk': 16.0.0
   '@angular/cli': ~15.2.0
   '@angular/common': ^16.0.0
   '@angular/compiler': ^16.0.0
@@ -291,6 +291,21 @@ packages:
     dependencies:
       '@angular/common': 16.0.0_cgstt3q5qhuatn4k4wid3vkqpm
       '@angular/core': 16.0.0_rxjs@7.8.0+zone.js@0.13.0
+      rxjs: 7.8.0
+      tslib: 2.4.1
+    optionalDependencies:
+      parse5: 7.1.2
+    dev: false
+
+  /@angular/cdk/16.0.0_pubfhxqcqejsenz5amhpwt3pua:
+    resolution: {integrity: sha512-3hiNRB5kBOYv+MJRlpLX++KzY96mTivE7BXM/pNoR4Hiq7aBnoCtp0zbTc9J7gPn8POX6t/4WfAogslbkvQXSg==}
+    peerDependencies:
+      '@angular/common': ^16.0.0 || ^17.0.0
+      '@angular/core': ^16.0.0 || ^17.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/common': 15.1.2_77moedl5bs7lqwcv53ddrcqlqi
+      '@angular/core': 15.1.2_rxjs@7.8.0+zone.js@0.13.0
       rxjs: 7.8.0
       tslib: 2.4.1
     optionalDependencies:
