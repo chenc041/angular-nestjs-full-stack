@@ -5,8 +5,8 @@ dependencies:
     specifier: ^16.0.0
     version: 16.0.0(@angular/core@16.0.0)
   '@angular/cdk':
-    specifier: 15.2.3
-    version: 15.2.3(@angular/common@16.0.0)(@angular/core@16.0.0)(rxjs@7.8.0)
+    specifier: 16.0.0
+    version: 16.0.0(@angular/common@16.0.0)(@angular/core@16.0.0)(rxjs@7.8.0)
   '@angular/common':
     specifier: ^16.0.0
     version: 16.0.0(@angular/core@16.0.0)(rxjs@7.8.0)
@@ -306,6 +306,21 @@ packages:
     peerDependencies:
       '@angular/common': ^15.0.0 || ^16.0.0
       '@angular/core': ^15.0.0 || ^16.0.0
+      rxjs: ^6.5.3 || ^7.4.0
+    dependencies:
+      '@angular/common': 16.0.0(@angular/core@16.0.0)(rxjs@7.8.0)
+      '@angular/core': 16.0.0(rxjs@7.8.0)(zone.js@0.13.0)
+      rxjs: 7.8.0
+      tslib: 2.5.0
+    optionalDependencies:
+      parse5: 7.1.2
+    dev: false
+
+  /@angular/cdk@16.0.0(@angular/common@16.0.0)(@angular/core@16.0.0)(rxjs@7.8.0):
+    resolution: {integrity: sha512-3hiNRB5kBOYv+MJRlpLX++KzY96mTivE7BXM/pNoR4Hiq7aBnoCtp0zbTc9J7gPn8POX6t/4WfAogslbkvQXSg==}
+    peerDependencies:
+      '@angular/common': ^16.0.0 || ^17.0.0
+      '@angular/core': ^16.0.0 || ^17.0.0
       rxjs: ^6.5.3 || ^7.4.0
     dependencies:
       '@angular/common': 16.0.0(@angular/core@16.0.0)(rxjs@7.8.0)
