@@ -12,7 +12,6 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
   standalone: true,
   imports: [NzCarouselModule, CommonModule, NzFormModule, ReactiveFormsModule, NzInputModule, NzCheckboxModule, NzButtonModule],
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
 })
 export default class LoginComponent implements OnInit {
   array = [1, 2, 3, 4];
@@ -38,7 +37,6 @@ export default class LoginComponent implements OnInit {
     this.validateForm = this.fb.group({
       userName: ['chen', [Validators.required]],
       password: ['cheng', [Validators.required]],
-      remember: [true],
     });
   }
 }

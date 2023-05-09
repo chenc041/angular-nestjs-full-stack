@@ -1,5 +1,7 @@
 import { Routes } from '@angular/router';
 
+import LayoutComponent from './common/layout/layout.component';
+
 export const routes: Routes = [
   {
     path: 'login',
@@ -7,12 +9,12 @@ export const routes: Routes = [
   },
   {
     path: '',
-    pathMatch: 'full',
     redirectTo: 'dashboard',
+    pathMatch: 'full',
   },
   {
     path: '',
-    loadComponent: () => import('./common/layout/layout.component'),
+    component: LayoutComponent,
     children: [
       {
         path: 'dashboard',

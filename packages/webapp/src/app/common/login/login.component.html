@@ -2,13 +2,13 @@
   <div class="w-1/2 h-full bg-gray-10 flex justify-center items-center">
     <nz-carousel nzAutoPlay>
       <div *ngFor="let index of array" nz-carousel-content>
-        <h3 class="h-full">{{ index }}</h3>
+        <div class="h-full flex justify-center items-center w-full bg-slate-600">{{ index }}</div>
       </div>
     </nz-carousel>
   </div>
   <div class="w-1/2 h-full bg-white flex justify-center items-center flex-col">
     <div class="text-4xl mb-5 mt-32">Melon Admin</div>
-    <div class="text-base text-gray-500 mb-6">想西瓜一样招人喜欢</div>
+    <div class="text-base text-gray-500 mb-6">想西瓜一样</div>
     <form (ngSubmit)="submitForm()" [formGroup]="validateForm" class="w-500px h-1/2" nz-form>
       <nz-form-item>
         <nz-form-control nzErrorTip="Please input your username!">
