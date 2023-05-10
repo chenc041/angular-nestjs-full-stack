@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @Component({
   selector: 'app-layout',
@@ -14,10 +16,12 @@ import { RouterOutlet } from '@angular/router';
       }
     `,
   ],
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NzDropDownModule, NzIconModule],
 })
 export default class LayoutComponent implements OnInit {
-  constructor() {}
+  constructor() {
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }
