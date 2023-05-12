@@ -1,16 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 import { CommonModule } from '@angular/common';
-import { NzFormModule } from 'ng-zorro-antd/form';
 import { ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { NzInputModule } from 'ng-zorro-antd/input';
-import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
-import { NzButtonModule } from 'ng-zorro-antd/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [NzCarouselModule, CommonModule, NzFormModule, ReactiveFormsModule, NzInputModule, NzCheckboxModule, NzButtonModule],
+  imports: [CommonModule, ReactiveFormsModule, InputTextModule, ButtonModule],
   templateUrl: './login.component.html',
 })
 export default class LoginComponent implements OnInit {
@@ -18,7 +15,8 @@ export default class LoginComponent implements OnInit {
 
   validateForm!: UntypedFormGroup;
 
-  constructor(private fb: UntypedFormBuilder) {}
+  constructor(private fb: UntypedFormBuilder) {
+  }
 
   submitForm(): void {
     if (this.validateForm.valid) {
