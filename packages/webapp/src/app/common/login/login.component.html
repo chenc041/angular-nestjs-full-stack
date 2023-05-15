@@ -2,25 +2,28 @@
   <div class="w-1/2 h-full bg-gray-10 flex justify-center items-center">
     <div class="h-full flex justify-center items-center w-full bg-slate-600">demo</div>
   </div>
-  <div class="w-1/2 h-full bg-white flex justify-center items-center flex-col">
-    <div class="text-4xl mb-5 mt-32">Melon Admin</div>
-    <div class="text-base text-gray-500 mb-6">想西瓜一样</div>
-    <form (ngSubmit)="submitForm()" [formGroup]="validateForm" class="w-500px h-1/2">
-      <div>
-        <span class="p-input-icon-left">
-          <i class="pi pi-search"></i>
-          <input formControlName="userName" pInputText type="text" />
-        </span>
-      </div>
-
-      <div>
-        <span class="p-input-icon-left">
-          <i class="pi pi-search"></i>
-          <input formControlName="userName" pInputText type="text" />
-        </span>
-      </div>
-      <p-button label="Secondary" styleClass="p-button-secondary" type="submit" />
-    </form>
-    <div class="mt-auto mb-3"><a href="https://github.com/chenc041" target="_blank">@chenc</a></div>
+  <div class="w-1/2 h-full surface-ground flex justify-center items-center">
+    <div class="bg-white border-solid border-amber-500 rounded-2xl py-20 px-10 shadow-md">
+      <div class="text-4xl text-center mb-5">Watermelon Admin</div>
+      <div class="text-center text-gray-500 mb-10">和西瓜一样</div>
+      <form (ngSubmit)="submitForm()" [formGroup]="validateForm" class="w-500px h-1/2">
+        <div class="w-full mb-5">
+          <label class="block text-900 text-xl font-medium mb-2" for="username">Email</label>
+          <input class="w-full" formControlName="username" id="username" pInputText type="text" />
+        </div>
+        <div class="w-full mb-10">
+          <label class="block text-900 text-xl font-medium mb-2" for="password">Password</label>
+          <p-password
+            [feedback]="false"
+            [toggleMask]="true"
+            formControlName="password"
+            id="password"
+            inputStyleClass="w-full"
+            styleClass="w-full"
+          />
+        </div>
+        <button class="p-button-raised p-button-sm w-full p-3 text-xl" label="Sign In" pButton pRipple></button>
+      </form>
+    </div>
   </div>
 </div>

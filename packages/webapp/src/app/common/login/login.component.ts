@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { RippleModule } from 'primeng/ripple';
+import { PasswordModule } from 'primeng/password';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, InputTextModule, ButtonModule],
+  imports: [CommonModule, ReactiveFormsModule, InputTextModule, ButtonModule, RippleModule, PasswordModule],
   templateUrl: './login.component.html',
 })
 export default class LoginComponent implements OnInit {
@@ -15,8 +17,7 @@ export default class LoginComponent implements OnInit {
 
   validateForm!: UntypedFormGroup;
 
-  constructor(private fb: UntypedFormBuilder) {
-  }
+  constructor(private fb: UntypedFormBuilder) {}
 
   submitForm(): void {
     if (this.validateForm.valid) {
@@ -33,7 +34,7 @@ export default class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({
-      userName: ['chen', [Validators.required]],
+      username: ['chen', [Validators.required]],
       password: ['cheng', [Validators.required]],
     });
   }
