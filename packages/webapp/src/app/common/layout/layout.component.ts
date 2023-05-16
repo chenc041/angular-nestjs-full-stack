@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 @Component({
   selector: 'app-layout',
@@ -14,12 +17,12 @@ import { RouterOutlet } from '@angular/router';
       }
     `,
   ],
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NzDropDownModule, NzIconModule, NzToolTipModule],
 })
 export default class LayoutComponent implements OnInit {
-  constructor() {
-  }
+  isCollapsed = false;
 
-  ngOnInit(): void {
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 }
