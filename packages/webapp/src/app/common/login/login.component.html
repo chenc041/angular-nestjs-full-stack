@@ -2,27 +2,22 @@
   <div class="w-1/2 h-full bg-gray-10 flex justify-center items-center">
     <div class="h-full flex justify-center items-center w-full bg-slate-600">demo</div>
   </div>
-  <div class="w-1/2 h-full surface-ground flex justify-center items-center">
+  <div class="w-1/2 h-full surface-ground flex justify-center items-center" style="background-color: #eff3f8">
     <div class="bg-white border-solid border-amber-500 rounded-2xl py-20 px-10 shadow-md">
       <div class="text-4xl text-center mb-5">Watermelon Admin</div>
       <div class="text-center text-gray-500 mb-10">和西瓜一样</div>
-      <form (ngSubmit)="submitForm()" [formGroup]="validateForm" class="w-500px h-1/2">
-        <div class="w-full mb-5">
-          <label class="block text-900 text-xl font-medium mb-2" for="username">Email</label>
-          <input class="w-full" formControlName="username" id="username" pInputText type="text" />
-        </div>
-        <div class="w-full mb-10">
-          <label class="block text-900 text-xl font-medium mb-2" for="password">Password</label>
-          <p-password
-            [feedback]="false"
-            [toggleMask]="true"
-            formControlName="password"
-            id="password"
-            inputStyleClass="w-full"
-            styleClass="w-full"
-          />
-        </div>
-        <button class="p-button-raised p-button-sm w-full p-3 text-xl" label="Sign In" pButton pRipple></button>
+      <form (ngSubmit)="submitForm()" [formGroup]="validateForm" class="w-500px h-1/2" nz-form>
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your username!">
+            <input formControlName="username" nz-input nzSize="large" placeholder="Username" type="text" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your Password!">
+            <input formControlName="password" nz-input nzSize="large" placeholder="Password" type="password" />
+          </nz-form-control>
+        </nz-form-item>
+        <button [nzType]="'primary'" class="w-full" nz-button nzSize="large">登录</button>
       </form>
     </div>
   </div>
