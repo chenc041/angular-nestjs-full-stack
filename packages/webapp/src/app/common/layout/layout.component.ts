@@ -1,28 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Route, RouterLink, RouterOutlet } from '@angular/router';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
+import { routes } from '~/app/routes';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   templateUrl: './layout.component.html',
-  styles: [
-    `
-      .menu {
-        width: 280px;
-        max-width: 280px;
-        min-width: 280px;
-      }
-    `,
-  ],
-  imports: [RouterOutlet, NzDropDownModule, NzIconModule, NzToolTipModule],
+  imports: [RouterOutlet, NzDropDownModule, NzIconModule, NzToolTipModule, CommonModule, RouterLink],
 })
 export default class LayoutComponent implements OnInit {
   isCollapsed = false;
 
+  menus: Route | undefined = routes
+    .filter((item) => item.title && item.title === 'layout')
+    .find((item) => {
+      return !item.data || typeof item.data['hideInMenu'] === 'undefined';
+    });
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.menus?.children, 'menus');
+  }
 }
