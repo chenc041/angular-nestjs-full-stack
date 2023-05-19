@@ -1,13 +1,6 @@
 import { Routes } from '@angular/router';
 
-import LayoutComponent from './common/layout/layout.component';
-
 export const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full',
-  },
   {
     path: 'login',
     title: '登录',
@@ -15,8 +8,13 @@ export const routes: Routes = [
   },
   {
     path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     title: 'layout',
-    component: LayoutComponent,
+    loadComponent: () => import('./common/layout/layout.component'),
     children: [
       {
         path: 'dashboard',

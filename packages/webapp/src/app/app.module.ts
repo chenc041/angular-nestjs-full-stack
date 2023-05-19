@@ -8,12 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { NZ_I18N, zh_CN } from 'ng-zorro-antd/i18n';
+import { RouterOutlet } from '@angular/router';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, BrowserAnimationsModule, RouterOutlet],
   providers: [
     {
       provide: NZ_I18N,

@@ -15,7 +15,10 @@ export class UserController {
   constructor(private readonly jwt: JwtConfigService, private readonly userService: UserService) {}
 
   @Post('login')
-  async login(@Body() user: LoginDto, @SetCookies() setCookie: Response): Promise<ApiReturnType<{ access_token: string }>> {
+  async login(
+    @Body() user: LoginDto,
+    @SetCookies() setCookie: Response,
+  ): Promise<ApiReturnType<{ access_token: string }>> {
     const userInfo = await this.userService.checkUserIsExist({ username: user.username });
     if (userInfo) {
       const isMatch = await comparePassword(user.password, userInfo.password);

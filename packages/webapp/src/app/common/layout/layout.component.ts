@@ -1,14 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  NavigationCancel,
-  NavigationEnd,
-  NavigationError,
-  NavigationStart,
-  Route,
-  Router,
-  RouterLink,
-  RouterOutlet,
-} from '@angular/router';
+import { Route, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
@@ -52,13 +43,6 @@ export default class LayoutComponent implements OnInit {
   constructor(private readonly router: Router) {}
 
   ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd || event instanceof NavigationError || event instanceof NavigationCancel) {
-        this.isLoading = false;
-      }
-      if (event instanceof NavigationStart) {
-        this.isLoading = true;
-      }
-    });
+    this.router.events.subscribe(console.log);
   }
 }
