@@ -1,18 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, RouterLink, RouterOutlet } from '@angular/router';
+import {
+  NavigationCancel,
+  NavigationEnd,
+  NavigationError,
+  NavigationStart,
+  Route,
+  Router,
+  RouterLink,
+  RouterOutlet,
+} from '@angular/router';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { routes } from '~/app/routes';
 import { CommonModule } from '@angular/common';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   templateUrl: './layout.component.html',
-  imports: [RouterOutlet, NzDropDownModule, NzIconModule, NzToolTipModule, CommonModule, RouterLink],
+  imports: [RouterOutlet, NzDropDownModule, NzIconModule, NzToolTipModule, CommonModule, RouterLink, NzSpinModule],
+  styles: [
+    `
+      .menuWidth {
+        min-width: 280px;
+      }
+    `,
+  ],
 })
 export default class LayoutComponent implements OnInit {
+  isLoading = false;
   isCollapsed = false;
 
   menus: Route | undefined = routes
@@ -21,9 +39,16 @@ export default class LayoutComponent implements OnInit {
       return !item.data || typeof item.data['hideInMenu'] === 'undefined';
     });
 
-  constructor() {}
+  constructor(private readonly router: Router) {}
 
   ngOnInit(): void {
-    console.log(this.menus?.children, 'menus');
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd || event instanceof NavigationError || event instanceof NavigationCancel) {
+        this.isLoading = false;
+      }
+      if (event instanceof NavigationStart) {
+        this.isLoading = true;
+      }
+    });
   }
 }

@@ -22,14 +22,14 @@ export const routes: Routes = [
         path: 'dashboard',
         title: 'dashboard',
         data: {
-          iconName: 'appstore',
+          icon: 'setting',
         },
         children: [
           {
             path: 'demo',
             title: 'dashboard - 1',
             data: {
-              iconName: 'appstore',
+              icon: 'appstore',
             },
             loadComponent: () => import('./core/dashboard/dashboard.component'),
           },
@@ -39,7 +39,7 @@ export const routes: Routes = [
         path: 'table',
         title: '表单',
         data: {
-          iconName: 'setting',
+          icon: 'setting',
         },
         loadComponent: () => import('./core/dashboard/dashboard.component'),
       },
