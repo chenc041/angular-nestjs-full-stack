@@ -5,9 +5,11 @@ type safeHtmlType = 'html' | 'script' | 'style';
 
 @Pipe({
   name: 'safeDom',
+  standalone: true,
 })
 export class SafeDomPipe implements PipeTransform {
   constructor(private readonly sanitizer: DomSanitizer) {}
+
   transform(value: string, type: safeHtmlType): SafeHtml | SafeScript | SafeStyle {
     switch (type) {
       case 'html':

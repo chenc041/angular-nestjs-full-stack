@@ -15,12 +15,22 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { routes } from '~/app/routes';
 import { CommonModule } from '@angular/common';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
+import { ShortTextPipe } from '~/app/shared/pipes/short-text.pipe';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   templateUrl: './layout.component.html',
-  imports: [RouterOutlet, NzDropDownModule, NzIconModule, NzToolTipModule, CommonModule, RouterLink, NzSpinModule],
+  imports: [
+    RouterOutlet,
+    NzDropDownModule,
+    NzIconModule,
+    NzToolTipModule,
+    CommonModule,
+    RouterLink,
+    NzSpinModule,
+    ShortTextPipe,
+  ],
   styles: [
     `
       .menuWidth {
