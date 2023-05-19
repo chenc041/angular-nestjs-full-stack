@@ -27,7 +27,7 @@ export const routes: Routes = [
         children: [
           {
             path: 'demo',
-            title: 'dashboard - 1',
+            title: '大屏展示',
             data: {
               icon: 'appstore',
             },

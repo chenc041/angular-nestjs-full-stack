@@ -4,7 +4,7 @@
       <ng-template [ngForOf]="menus.children" let-item ngFor>
         <li
           *ngIf="!item.children || item.children.length === 0"
-          [nzTooltipTitle]="isCollapsed ? 'Navigation One' : ''"
+          [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"
           nz-menu-item
           nz-tooltip
           nzMatchRouter
@@ -28,7 +28,7 @@
               </li>
               <li
                 *ngIf="child.children && child.children.length > 0"
-                [nzIcon]='child.data?.["icon"]?? null'
+                [nzIcon]='child.data?.["icon"] ?? null'
                 [nzTitle]="$any(child.title)"
                 nz-submenu
               >
