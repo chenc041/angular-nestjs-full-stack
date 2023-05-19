@@ -33,7 +33,7 @@ export class UserController {
         });
       }
       return apiReturn({
-        statusCode: 10002,
+        statusCode: 10000,
       });
     } else {
       return apiReturn({
@@ -47,7 +47,7 @@ export class UserController {
     const isExist = await this.userService.checkUserIsExist({ username: user.username });
     if (isExist) {
       return apiReturn({
-        statusCode: 10003,
+        statusCode: 10001,
       });
     }
     const password = await generatePassword(user.password);
