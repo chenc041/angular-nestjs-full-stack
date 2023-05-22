@@ -1,7 +1,7 @@
 <div class="layout flex justify-start bg-gray-100">
-  <aside *ngIf="menus && menus?.children?.length" class="menu h-screen bg-white shadow-xl z-10">
+  <aside *ngIf="menus && menus" class="menu h-screen bg-white shadow-xl z-10">
     <ul [ngClass]="{ menuWidth: !isCollapsed }" [nzInlineCollapsed]="isCollapsed" nz-menu nzMode="inline">
-      <ng-template [ngForOf]="menus.children" let-item ngFor>
+      <ng-template [ngForOf]="menus" let-item ngFor>
         <li
           *ngIf="!item.children || item.children.length === 0"
           [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"

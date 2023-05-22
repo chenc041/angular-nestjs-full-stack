@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Route, Router, RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet, Routes } from '@angular/router';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
@@ -34,11 +34,7 @@ export default class LayoutComponent implements OnInit {
   isLoading = false;
   isCollapsed = false;
 
-  menus: Route | undefined = routes
-    .filter((item) => item.title && item.title === 'layout')
-    .find((item) => {
-      return !item.data || typeof item.data['hideInMenu'] === 'undefined';
-    });
+  menus: Routes = routes || [];
 
   constructor(private readonly router: Router) {}
 
