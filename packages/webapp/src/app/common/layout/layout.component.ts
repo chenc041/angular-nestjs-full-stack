@@ -3,7 +3,7 @@ import { Router, RouterLink, RouterOutlet, Routes } from '@angular/router';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
-import { routes } from '~/app/routes';
+import { childrenRoutes } from '~/app/children.routes';
 import { CommonModule } from '@angular/common';
 import { NzSpinModule } from 'ng-zorro-antd/spin';
 import { ShortTextPipe } from '~/app/shared/pipes/short-text.pipe';
@@ -34,7 +34,7 @@ export default class LayoutComponent implements OnInit {
   isLoading = false;
   isCollapsed = false;
 
-  menus: Routes = routes || [];
+  menus: Routes = childrenRoutes || [];
 
   constructor(private readonly router: Router) {}
 
