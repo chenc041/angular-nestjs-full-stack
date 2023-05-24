@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterLink, RouterOutlet, Routes } from '@angular/router';
+import { RouterLink, RouterOutlet, Routes } from '@angular/router';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
@@ -36,9 +36,7 @@ export default class LayoutComponent implements OnInit {
 
   menus: Routes = childrenRoutes || [];
 
-  constructor(private readonly router: Router) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.router.events.subscribe(console.log);
-  }
+  ngOnInit(): void {}
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dashboard.component.html',
 })
 export default class DashboardComponent implements OnInit {
-  constructor() {
-  }
+  @Input() icon?: string;
+
+  constructor() {}
 
   ngOnInit(): void {
+    console.log(this.icon, 'icon');
   }
 }
