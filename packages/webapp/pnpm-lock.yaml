@@ -29,8 +29,8 @@ dependencies:
     specifier: ^16.0.2
     version: 16.0.2(@angular/common@16.0.2)(@angular/core@16.0.2)(@angular/platform-browser@16.0.2)(rxjs@7.8.1)
   '@ant-design/icons-angular':
-    specifier: ^15.0.0
-    version: 15.0.0(@angular/common@16.0.2)(@angular/core@16.0.2)(@angular/platform-browser@16.0.2)(rxjs@7.8.1)
+    specifier: ^16.0.0
+    version: 16.0.0(@angular/common@16.0.2)(@angular/core@16.0.2)(@angular/platform-browser@16.0.2)(rxjs@7.8.1)
   ng-zorro-antd:
     specifier: ^15.1.0
     version: 15.1.0(@angular/animations@16.0.2)(@angular/common@16.0.2)(@angular/core@16.0.2)(@angular/forms@16.0.2)(@angular/platform-browser@16.0.2)(@angular/router@16.0.2)(rxjs@7.8.1)
@@ -491,6 +491,12 @@ packages:
       '@ctrl/tinycolor': 3.6.0
     dev: false
 
+  /@ant-design/colors@7.0.0:
+    resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
+    dependencies:
+      '@ctrl/tinycolor': 3.6.0
+    dev: false
+
   /@ant-design/icons-angular@15.0.0(@angular/common@16.0.2)(@angular/core@16.0.2)(@angular/platform-browser@16.0.2)(rxjs@7.8.1):
     resolution: {integrity: sha512-9DMpuoqZBvS7+VJ0s3tl2g/kI1sTLDQWfykiXYa+AkZ2AvJwHebvR7Cw7/xfiXFDLyZTjPgtC0x0gex13EShuA==}
     peerDependencies:
@@ -503,6 +509,22 @@ packages:
       '@angular/core': 16.0.2(rxjs@7.8.1)(zone.js@0.13.0)
       '@angular/platform-browser': 16.0.2(@angular/animations@16.0.2)(@angular/common@16.0.2)(@angular/core@16.0.2)
       '@ant-design/colors': 5.1.1
+      rxjs: 7.8.1
+      tslib: 2.5.2
+    dev: false
+
+  /@ant-design/icons-angular@16.0.0(@angular/common@16.0.2)(@angular/core@16.0.2)(@angular/platform-browser@16.0.2)(rxjs@7.8.1):
+    resolution: {integrity: sha512-KWBmWZl2so49R/MdAT7aG+xaBlMKl9SArR3Du/iPA0Am9GI1i9R89KgnnLWz+gkzHTye15S1IBXpgts4GPPU/w==}
+    peerDependencies:
+      '@angular/common': ^16.0.0
+      '@angular/core': ^16.0.0
+      '@angular/platform-browser': ^16.0.0
+      rxjs: ^6.4.0 || ^7.4.0
+    dependencies:
+      '@angular/common': 16.0.2(@angular/core@16.0.2)(rxjs@7.8.1)
+      '@angular/core': 16.0.2(rxjs@7.8.1)(zone.js@0.13.0)
+      '@angular/platform-browser': 16.0.2(@angular/animations@16.0.2)(@angular/common@16.0.2)(@angular/core@16.0.2)
+      '@ant-design/colors': 7.0.0
       rxjs: 7.8.1
       tslib: 2.5.2
     dev: false
