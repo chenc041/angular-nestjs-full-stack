@@ -9,8 +9,8 @@ dependencies:
     specifier: ^16.1.1
     version: 16.1.1(@angular/core@16.1.1)
   '@angular/cdk':
-    specifier: 16.1.5
-    version: 16.1.5(@angular/common@16.1.1)(@angular/core@16.1.1)(rxjs@7.8.1)
+    specifier: 16.1.6
+    version: 16.1.6(@angular/common@16.1.1)(@angular/core@16.1.1)(rxjs@7.8.1)
   '@angular/common':
     specifier: ^16.1.1
     version: 16.1.1(@angular/core@16.1.1)(rxjs@7.8.1)
@@ -306,8 +306,8 @@ packages:
       tslib: 2.5.3
     dev: false
 
-  /@angular/cdk@16.1.5(@angular/common@16.1.1)(@angular/core@16.1.1)(rxjs@7.8.1):
-    resolution: {integrity: sha512-8wjYhLwW9bWicBYSdDXuN71SBP7NbJmXs+XiWiRkaFUkVDeU9z8Qkitogl+qqsSXvsOmi+12MowrbJ3tPizaLw==}
+  /@angular/cdk@16.1.6(@angular/common@16.1.1)(@angular/core@16.1.1)(rxjs@7.8.1):
+    resolution: {integrity: sha512-ICwX3OyxmVotlhzlkvilvfZz32y9RXvUAaVtPsU1i20orgQBOMp+JGdP/vahLjTQRioUus834Wh6bu0KdHjCEg==}
     peerDependencies:
       '@angular/common': ^16.0.0 || ^17.0.0
       '@angular/core': ^16.0.0 || ^17.0.0
@@ -3513,6 +3513,7 @@ packages:
 
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    requiresBuild: true
     peerDependencies:
       supports-color: '*'
     peerDependenciesMeta:
@@ -5401,7 +5402,7 @@ packages:
       '@angular/router': ^16.0.0
     dependencies:
       '@angular/animations': 16.1.1(@angular/core@16.1.1)
-      '@angular/cdk': 16.1.5(@angular/common@16.1.1)(@angular/core@16.1.1)(rxjs@7.8.1)
+      '@angular/cdk': 16.1.6(@angular/common@16.1.1)(@angular/core@16.1.1)(rxjs@7.8.1)
       '@angular/common': 16.1.1(@angular/core@16.1.1)(rxjs@7.8.1)
       '@angular/core': 16.1.1(rxjs@7.8.1)(zone.js@0.13.1)
       '@angular/forms': 16.1.1(@angular/common@16.1.1)(@angular/core@16.1.1)(@angular/platform-browser@16.1.1)(rxjs@7.8.1)
@@ -5426,6 +5427,7 @@ packages:
 
   /node-addon-api@3.2.1:
     resolution: {integrity: sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -5437,6 +5439,7 @@ packages:
   /node-gyp-build@4.4.0:
     resolution: {integrity: sha512-amJnQCcgtRVw9SvoebO3BKGESClrfXGCUTX9hSn1OuGQTQBOZmVd0Z0OlecpuRksKvbsUqALE8jls/ErClAPuQ==}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -5830,6 +5833,7 @@ packages:
   /pify@4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -6304,6 +6308,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -6599,6 +6604,7 @@ packages:
 
   /sax@1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -6635,6 +6641,7 @@ packages:
   /semver@5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
