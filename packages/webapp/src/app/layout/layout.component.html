@@ -1,0 +1,70 @@
+<div class='layout flex justify-start bg-gray-100'>
+  <aside *ngIf='menus && menus' class='menu h-screen bg-white shadow-xl z-10'>
+    <ul [ngClass]='{ menuWidth: !isCollapsed }' [nzInlineCollapsed]='isCollapsed' nz-menu nzMode='inline'>
+      <ng-template [ngForOf]='menus' let-item ngFor>
+        <li
+          *ngIf='!item.children || item.children.length === 0'
+          [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"
+          nz-menu-item
+          nz-tooltip
+          nzMatchRouter
+          nzTooltipPlacement='right'
+        >
+          <a [routerLink]='[item.path]' class='flex items-center'>
+            <span nz-icon nzType='mail'></span>
+            <span>{{ item.title }}</span>
+          </a>
+        </li>
+        <li
+          *ngIf='item.children && item.children.length > 0'
+          [nzIcon]="item.data?.['icon'] ?? null"
+          [nzTitle]='$any(item.title)'
+          nz-submenu
+        >
+          <ul>
+            <ng-template [ngForOf]='item.children' let-child ngFor>
+              <li *ngIf='!child.children || child.children.length === 0' nz-menu-item nzMatchRouter>
+                <a [routerLink]='[item.path, child.path]'>{{ child.title }}</a>
+              </li>
+              <li
+                *ngIf='child.children && child.children.length > 0'
+                [nzIcon]='child.data?.["icon"] ?? null'
+                [nzTitle]='$any(child.title)'
+                nz-submenu
+              >
+                <ul>
+                  <li *ngFor='let grandson of child.children' nz-menu-item nzMatchRouter>
+                    <a [routerLink]='[item.path, child.path, grandson.path]'>{{ grandson.title }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ng-template>
+          </ul>
+        </li>
+      </ng-template>
+    </ul>
+  </aside>
+  <main class='flex h-screen overflow-y-auto flex-col w-screen'>
+    <header class='bg-white flex items-center justify-end flex-shrink-0 sticky top-0 h-14 border-amber-300 shadow pr-5'>
+      <a [nzDropdownMenu]='menu' nz-dropdown nzTrigger='click'>
+        chen
+        <span nz-icon nzType='down'></span>
+      </a>
+      <nz-dropdown-menu #menu='nzDropdownMenu'>
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>退出登录</li>
+        </ul>
+      </nz-dropdown-menu>
+    </header>
+    <div class='h-full'>
+      <router-outlet>
+        <div *ngIf='isLoading' class='h-full flex items-center justify-center'>
+          <nz-spin nzSimple nzSize='large' />
+        </div>
+      </router-outlet>
+    </div>
+    <footer class='flex items-center flex-shrink-0 h-14 bg-white text-gray-600 text-center'>
+      <a class='w-screen inline-block' href='https://github.com/chenc041' rel='noopener' target='_blank'>@chenc</a>
+    </footer>
+  </main>
+</div>
