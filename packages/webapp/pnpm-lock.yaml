@@ -9,8 +9,8 @@ dependencies:
     specifier: ^16.2.6
     version: 16.2.6(@angular/core@16.2.6)
   '@angular/cdk':
-    specifier: 16.2.5
-    version: 16.2.5(@angular/common@16.2.6)(@angular/core@16.2.6)(rxjs@7.8.1)
+    specifier: 16.2.7
+    version: 16.2.7(@angular/common@16.2.6)(@angular/core@16.2.6)(rxjs@7.8.1)
   '@angular/common':
     specifier: ^16.2.6
     version: 16.2.6(@angular/core@16.2.6)(rxjs@7.8.1)
@@ -309,8 +309,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@angular/cdk@16.2.5(@angular/common@16.2.6)(@angular/core@16.2.6)(rxjs@7.8.1):
-    resolution: {integrity: sha512-9VbdWSYVFQq9y7Dl8KMooE+Sa5nx0l4Neue1IMmSS2v8b602VykiYA5aqz0BsLjfoiboXlUz6LCBXxukJtogcQ==}
+  /@angular/cdk@16.2.7(@angular/common@16.2.6)(@angular/core@16.2.6)(rxjs@7.8.1):
+    resolution: {integrity: sha512-LLbCu0pHHsZWGjSpQW0qRoKYRCm09TuFH2vzsViyaQF7umDKlk52QcDFB/nMioyiWPgqXkyHyGMFG1vFBNSIeg==}
     peerDependencies:
       '@angular/common': ^16.0.0 || ^17.0.0
       '@angular/core': ^16.0.0 || ^17.0.0
@@ -5688,7 +5688,7 @@ packages:
       '@angular/router': ^16.0.0
     dependencies:
       '@angular/animations': 16.2.6(@angular/core@16.2.6)
-      '@angular/cdk': 16.2.5(@angular/common@16.2.6)(@angular/core@16.2.6)(rxjs@7.8.1)
+      '@angular/cdk': 16.2.7(@angular/common@16.2.6)(@angular/core@16.2.6)(rxjs@7.8.1)
       '@angular/common': 16.2.6(@angular/core@16.2.6)(rxjs@7.8.1)
       '@angular/core': 16.2.6(rxjs@7.8.1)(zone.js@0.14.0)
       '@angular/forms': 16.2.6(@angular/common@16.2.6)(@angular/core@16.2.6)(@angular/platform-browser@16.2.6)(rxjs@7.8.1)
