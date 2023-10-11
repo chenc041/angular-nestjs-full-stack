@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import type { Routes } from '@angular/router';
 
 export const childrenRoutes: Routes = [
   {
@@ -10,7 +10,7 @@ export const childrenRoutes: Routes = [
     children: [
       {
         path: 'demo',
-        title: '大屏展示',
+        title: 'child',
         data: {
           icon: 'appstore',
         },
@@ -26,8 +26,23 @@ export const childrenRoutes: Routes = [
     },
     loadComponent: () => import('~/app/pages/dashboard/dashboard.component'),
   },
+  {
+    path: '404',
+    title: '404',
+    data: {
+      hideInMenu: true,
+    },
+    loadComponent: () => import('~/app/exception/not-found.component'),
+  },
+  {
+    path: '500',
+    title: '500',
+    data: {
+      hideInMenu: true,
+    },
+    loadComponent: () => import('~/app/exception/server-error.component'),
+  },
 ];
-
 
 export const routes: Routes = [
   {

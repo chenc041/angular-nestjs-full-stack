@@ -1,9 +1,10 @@
 <div class='layout flex justify-start bg-gray-100'>
   <aside *ngIf='menus && menus' class='menu h-screen bg-white shadow-xl z-10'>
-    <ul [ngClass]='{ menuWidth: !isCollapsed }' [nzInlineCollapsed]='isCollapsed' nz-menu nzMode='inline'>
+    <ul [ngClass]='{ menuWidth: !isCollapsed }'
+        [nzInlineCollapsed]='isCollapsed' nz-menu nzMode='inline'>
       <ng-template [ngForOf]='menus' let-item ngFor>
         <li
-          *ngIf='!item.children || item.children.length === 0'
+          *ngIf='(!item.children || item.children.length === 0) && !item.data?.["hideInMenu"]'
           [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"
           nz-menu-item
           nz-tooltip
@@ -20,10 +21,12 @@
           [nzIcon]="item.data?.['icon'] ?? null"
           [nzTitle]='$any(item.title)'
           nz-submenu
+          nzOpen
         >
           <ul>
             <ng-template [ngForOf]='item.children' let-child ngFor>
-              <li *ngIf='!child.children || child.children.length === 0' nz-menu-item nzMatchRouter>
+              <li *ngIf='(!child.children || child.children.length === 0) && !child.data?.["hideInMenu"]' nz-menu-item
+                  nzMatchRouter>
                 <a [routerLink]='[item.path, child.path]'>{{ child.title }}</a>
               </li>
               <li
