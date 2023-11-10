@@ -44,7 +44,7 @@ export const childrenRoutes: Routes = [
   },
 ];
 
-export const routes: Routes = [
+export const appRoutes: Routes = [
   {
     path: 'login',
     title: '登录',

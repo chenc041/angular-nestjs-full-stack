@@ -1,12 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink, RouterOutlet, Routes } from '@angular/router';
-import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
-import { NzIconModule } from 'ng-zorro-antd/icon';
-import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
-import { CommonModule, Location } from '@angular/common';
-import { NzSpinModule } from 'ng-zorro-antd/spin';
-import { childrenRoutes } from '~/app/routes';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { ShortTextPipe } from '~/app/shared/pipes/short-text.pipe';
+import { ToastModule } from 'primeng/toast';
+import { MenuModule } from 'primeng/menu';
+import { MenuItem, MessageService } from 'primeng/api';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-layout',
@@ -14,14 +12,13 @@ import { ShortTextPipe } from '~/app/shared/pipes/short-text.pipe';
   templateUrl: './layout.component.html',
   imports: [
     RouterOutlet,
-    NzDropDownModule,
-    NzIconModule,
-    NzToolTipModule,
-    CommonModule,
     RouterLink,
-    NzSpinModule,
     ShortTextPipe,
+    ToastModule,
+    MenuModule,
+    ButtonModule,
   ],
+  providers: [MessageService],
   styles: [
     `
       .menuWidth {
@@ -31,15 +28,56 @@ import { ShortTextPipe } from '~/app/shared/pipes/short-text.pipe';
   ],
 })
 export default class LayoutComponent implements OnInit {
-  isLoading = false;
-  isCollapsed = false;
+  items: MenuItem[] | undefined;
 
-  menus: Routes = childrenRoutes || [];
-
-  constructor(private readonly location: Location) {
+  constructor(private messageService: MessageService) {
   }
 
-  ngOnInit(): void {
-    console.log(this.location.path(), 'location');
+
+  ngOnInit() {
+    this.items = [
+      {
+        label: 'Options',
+        items: [
+          {
+            label: 'Update',
+            icon: 'pi pi-refresh',
+            command: () => {
+              this.update();
+            },
+          },
+          {
+            label: 'Delete',
+            icon: 'pi pi-times',
+            command: () => {
+              this.delete();
+            },
+          },
+        ],
+      },
+      {
+        label: 'Navigate',
+        items: [
+          {
+            label: 'Angular',
+            icon: 'pi pi-external-link',
+            url: 'https://angular.io',
+          },
+          {
+            label: 'Router',
+            icon: 'pi pi-upload',
+            routerLink: '/fileupload',
+          },
+        ],
+      },
+    ];
+  }
+
+  update() {
+    this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Data Updated' });
+  }
+
+  delete() {
+    this.messageService.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted' });
   }
 }
