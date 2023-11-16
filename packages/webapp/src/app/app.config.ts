@@ -7,9 +7,9 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 import { IconDefinition } from '@ant-design/icons-angular';
 
-import { SettingOutline } from '@ant-design/icons-angular/icons';
+import { SettingOutline, MailOutline } from '@ant-design/icons-angular/icons';
 
-const icons: IconDefinition[] = [SettingOutline];
+const icons: IconDefinition[] = [SettingOutline, MailOutline];
 
 export const appConfig: ApplicationConfig = {
   providers: [

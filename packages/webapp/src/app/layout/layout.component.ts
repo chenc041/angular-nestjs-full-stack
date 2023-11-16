@@ -5,12 +5,14 @@ import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { childrenRoutes } from '~/app/app.children.routes';
 import { CommonModule } from '@angular/common';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   templateUrl: './layout.component.html',
-  imports: [RouterOutlet, RouterLink, CommonModule, ShortTextPipe, NzToolTipModule, NzDropDownModule],
+  imports: [RouterOutlet, RouterLink, CommonModule, ShortTextPipe, NzToolTipModule, NzDropDownModule, NzIconModule, NzSpinModule],
   providers: [],
   styles: [
     `

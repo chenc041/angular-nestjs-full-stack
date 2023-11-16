@@ -1,52 +1,62 @@
 <div class='layout flex justify-start bg-gray-100'>
-  <aside *ngIf='menus && menus' class='menu h-screen bg-white shadow-xl z-10'>
-    <ul [ngClass]='{ menuWidth: !isCollapsed }'
-        [nzInlineCollapsed]='isCollapsed' nz-menu nzMode='inline'>
-      <ng-template [ngForOf]='menus' let-item ngFor>
-        <li
-          *ngIf='(!item.children || item.children.length === 0) && !item.data?.["hideInMenu"]'
-          [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"
-          nz-menu-item
-          nz-tooltip
-          nzMatchRouter
-          nzTooltipPlacement='right'
-        >
-          <a [routerLink]='[item.path]' class='flex items-center'>
-            <span nz-icon nzType='mail'></span>
-            <span>{{ item.title }}</span>
-          </a>
-        </li>
-        <li
-          *ngIf='item.children && item.children.length > 0'
-          [nzIcon]="item.data?.['icon'] ?? null"
-          [nzTitle]='$any(item.title)'
-          nz-submenu
-          nzOpen
-        >
-          <ul>
-            <ng-template [ngForOf]='item.children' let-child ngFor>
-              <li *ngIf='(!child.children || child.children.length === 0) && !child.data?.["hideInMenu"]' nz-menu-item
-                  nzMatchRouter>
-                <a [routerLink]='[item.path, child.path]'>{{ child.title }}</a>
-              </li>
+  @if (menus && menus.length > 0) {
+    <aside class='menu h-screen bg-white shadow-xl z-10'>
+      <ul [ngClass]='{ menuWidth: !isCollapsed }'
+          [nzInlineCollapsed]='isCollapsed' nz-menu nzMode='inline'>
+          @for (item of menus; track item.path) {
+            <li
+              *ngIf='(!item.children || item.children.length === 0) && !item.data?.["hideInMenu"]'
+              [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"
+              nz-menu-item
+              nz-tooltip
+              nzMatchRouter
+              nzTooltipPlacement='right'
+            >
+              <a [routerLink]='[item.path]' class='flex items-center'>
+                <span nz-icon nzType='mail'></span>
+                <span>{{ item.title }} 西瓜</span>
+              </a>
+            </li>
+            @if (item.children && item.children.length > 0) {
               <li
-                *ngIf='child.children && child.children.length > 0'
-                [nzIcon]='child.data?.["icon"] ?? null'
-                [nzTitle]='$any(child.title)'
+                [nzIcon]="item.data?.['icon'] ?? null"
+                [nzTitle]='$any(item.title)'
                 nz-submenu
+                nzOpen
               >
                 <ul>
-                  <li *ngFor='let grandson of child.children' nz-menu-item nzMatchRouter>
-                    <a [routerLink]='[item.path, child.path, grandson.path]'>{{ grandson.title }}</a>
-                  </li>
+                  @for (child of item.children; track child.path) {
+                    @if ((!child.children || child.children.length === 0) && !child.data?.["hideInMenu"]) {
+                      <li nz-menu-item
+                          nzMatchRouter>
+                        <a [routerLink]='[item.path, child.path]'>{{ child.title }}</a>
+                      </li>
+                    }
+                    @if (child.children && child.children.length > 0) {
+                      <li
+                        [nzIcon]='child.data?.["icon"] ?? null'
+                        [nzTitle]='$any(child.title)'
+                        nz-submenu
+                      >
+                        @if(child.children && child.children.length > 0) {
+                          <ul>
+                            @for(grandson of child.children; track grandson.path) {
+                              <li nz-menu-item nzMatchRouter>
+                                <a [routerLink]='[item.path, child.path, grandson.path]'>{{ grandson.title }}</a>
+                              </li>
+                            }
+                          </ul>
+                        }
+                      </li>
+                    }
+                  }
                 </ul>
               </li>
-            </ng-template>
-          </ul>
-        </li>
-      </ng-template>
-    </ul>
-  </aside>
+            }
+          }
+      </ul>
+    </aside>
+  }
   <main class='flex h-screen overflow-y-auto flex-col w-screen'>
     <header class='bg-white flex items-center justify-end flex-shrink-0 sticky top-0 h-14 border-amber-300 shadow pr-5'>
       <div class='card flex justify-content-center'>
@@ -67,7 +77,7 @@
       <router-outlet>
         @if(isLoading) {
           <div class='h-full flex items-center justify-center'>
-            <!-- <nz-spin nzSimple nzSize='large' /> -->
+             <nz-spin nzSimple nzSize='large' />
           </div>
         }
       </router-outlet>
