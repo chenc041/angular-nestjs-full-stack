@@ -1,14 +1,76 @@
 <div class='layout flex justify-start bg-gray-100'>
+  <aside *ngIf='menus && menus' class='menu h-screen bg-white shadow-xl z-10'>
+    <ul [ngClass]='{ menuWidth: !isCollapsed }'
+        [nzInlineCollapsed]='isCollapsed' nz-menu nzMode='inline'>
+      <ng-template [ngForOf]='menus' let-item ngFor>
+        <li
+          *ngIf='(!item.children || item.children.length === 0) && !item.data?.["hideInMenu"]'
+          [nzTooltipTitle]="isCollapsed ? $any(item.title) : ''"
+          nz-menu-item
+          nz-tooltip
+          nzMatchRouter
+          nzTooltipPlacement='right'
+        >
+          <a [routerLink]='[item.path]' class='flex items-center'>
+            <span nz-icon nzType='mail'></span>
+            <span>{{ item.title }}</span>
+          </a>
+        </li>
+        <li
+          *ngIf='item.children && item.children.length > 0'
+          [nzIcon]="item.data?.['icon'] ?? null"
+          [nzTitle]='$any(item.title)'
+          nz-submenu
+          nzOpen
+        >
+          <ul>
+            <ng-template [ngForOf]='item.children' let-child ngFor>
+              <li *ngIf='(!child.children || child.children.length === 0) && !child.data?.["hideInMenu"]' nz-menu-item
+                  nzMatchRouter>
+                <a [routerLink]='[item.path, child.path]'>{{ child.title }}</a>
+              </li>
+              <li
+                *ngIf='child.children && child.children.length > 0'
+                [nzIcon]='child.data?.["icon"] ?? null'
+                [nzTitle]='$any(child.title)'
+                nz-submenu
+              >
+                <ul>
+                  <li *ngFor='let grandson of child.children' nz-menu-item nzMatchRouter>
+                    <a [routerLink]='[item.path, child.path, grandson.path]'>{{ grandson.title }}</a>
+                  </li>
+                </ul>
+              </li>
+            </ng-template>
+          </ul>
+        </li>
+      </ng-template>
+    </ul>
+  </aside>
   <main class='flex h-screen overflow-y-auto flex-col w-screen'>
     <header class='bg-white flex items-center justify-end flex-shrink-0 sticky top-0 h-14 border-amber-300 shadow pr-5'>
       <div class='card flex justify-content-center'>
-        <p-toast></p-toast>
-        <p-menu #menu [model]='items' [popup]='true'></p-menu>
-        <button (click)='menu.toggle($event)' icon='pi pi-bars' label='Show' pButton type='button'></button>
+        <a [nzDropdownMenu]='menu' nz-dropdown>
+          Hover me
+        </a>
+        <nz-dropdown-menu #menu='nzDropdownMenu'>
+          <ul nz-menu nzSelectable>
+            <li nz-menu-item>1st menu item</li>
+            <li nz-menu-item>2nd menu item</li>
+            <li nz-menu-item>3rd menu item</li>
+            <li nz-menu-item nzDanger>4th danger item</li>
+          </ul>
+        </nz-dropdown-menu>
       </div>
     </header>
     <div class='h-full m-5'>
-      <router-outlet />
+      <router-outlet>
+        @if(isLoading) {
+          <div class='h-full flex items-center justify-center'>
+            <!-- <nz-spin nzSimple nzSize='large' /> -->
+          </div>
+        }
+      </router-outlet>
     </div>
     <footer class='flex items-center flex-shrink-0 h-14 bg-white text-gray-600 text-center'>
       <a class='w-screen inline-block' href='https://github.com/chenc041' rel='noopener' target='_blank'>&#64;chenc</a>

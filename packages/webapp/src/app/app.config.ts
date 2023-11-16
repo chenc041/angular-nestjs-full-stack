@@ -1,8 +1,20 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 
-import { appRoutes } from '~/app/app.routes';
+import { appRootRoutes } from '~/app/app.root.routes';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
+import { IconDefinition } from '@ant-design/icons-angular';
+
+import { SettingOutline } from '@ant-design/icons-angular/icons';
+
+const icons: IconDefinition[] = [SettingOutline];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(appRoutes, withComponentInputBinding())],
+  providers: [
+    provideRouter(appRootRoutes, withComponentInputBinding()),
+    importProvidersFrom(BrowserAnimationsModule),
+    importProvidersFrom(NzIconModule.forRoot(icons)),
+  ],
 };

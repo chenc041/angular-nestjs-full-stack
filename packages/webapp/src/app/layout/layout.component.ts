@@ -1,24 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet, Routes } from '@angular/router';
 import { ShortTextPipe } from '~/app/shared/pipes/short-text.pipe';
-import { ToastModule } from 'primeng/toast';
-import { MenuModule } from 'primeng/menu';
-import { MenuItem, MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { childrenRoutes } from '~/app/app.children.routes';
+import { CommonModule } from '@angular/common';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   templateUrl: './layout.component.html',
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    ShortTextPipe,
-    ToastModule,
-    MenuModule,
-    ButtonModule,
-  ],
-  providers: [MessageService],
+  imports: [RouterOutlet, RouterLink, CommonModule, ShortTextPipe, NzToolTipModule, NzDropDownModule],
+  providers: [],
   styles: [
     `
       .menuWidth {
@@ -28,56 +21,14 @@ import { ButtonModule } from 'primeng/button';
   ],
 })
 export default class LayoutComponent implements OnInit {
-  items: MenuItem[] | undefined;
+  isLoading = false;
+  isCollapsed = false;
 
-  constructor(private messageService: MessageService) {
+  menus: Routes = childrenRoutes || [];
+
+  constructor() {
   }
-
 
   ngOnInit() {
-    this.items = [
-      {
-        label: 'Options',
-        items: [
-          {
-            label: 'Update',
-            icon: 'pi pi-refresh',
-            command: () => {
-              this.update();
-            },
-          },
-          {
-            label: 'Delete',
-            icon: 'pi pi-times',
-            command: () => {
-              this.delete();
-            },
-          },
-        ],
-      },
-      {
-        label: 'Navigate',
-        items: [
-          {
-            label: 'Angular',
-            icon: 'pi pi-external-link',
-            url: 'https://angular.io',
-          },
-          {
-            label: 'Router',
-            icon: 'pi pi-upload',
-            routerLink: '/fileupload',
-          },
-        ],
-      },
-    ];
-  }
-
-  update() {
-    this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Data Updated' });
-  }
-
-  delete() {
-    this.messageService.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted' });
   }
 }

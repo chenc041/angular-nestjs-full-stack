@@ -43,22 +43,3 @@ export const childrenRoutes: Routes = [
     loadComponent: () => import('~/app/exception/server-error.component'),
   },
 ];
-
-export const appRoutes: Routes = [
-  {
-    path: 'login',
-    title: '登录',
-    loadComponent: () => import('~/app/pages/login/login.component'),
-  },
-  {
-    path: '',
-    redirectTo: 'dashboard/demo',
-    pathMatch: 'full',
-  },
-  {
-    path: '',
-    title: 'layout',
-    loadComponent: () => import('~/app/layout/layout.component'),
-    children: childrenRoutes,
-  },
-];
