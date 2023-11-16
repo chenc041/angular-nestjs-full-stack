@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@angular-devkit/build-angular': ^17.0.1
   '@angular/animations': ^17.0.3
-  '@angular/cdk': 17.0.0
+  '@angular/cdk': 17.0.1
   '@angular/cli': ~17.0.1
   '@angular/common': ^17.0.3
   '@angular/compiler': ^17.0.3
@@ -37,7 +37,7 @@ specifiers:
 
 dependencies:
   '@angular/animations': 17.0.3_@angular+core@17.0.3
-  '@angular/cdk': 17.0.0_5d654e6ccjownr4t7kb6denxom
+  '@angular/cdk': 17.0.1_5d654e6ccjownr4t7kb6denxom
   '@angular/common': 17.0.3_on4u2y7yrmcwtuqi62kb42tsgy
   '@angular/compiler': 17.0.3_@angular+core@17.0.3
   '@angular/core': 17.0.3_rxjs@7.8.1+zone.js@0.14.2
@@ -305,8 +305,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@angular/cdk/17.0.0_5d654e6ccjownr4t7kb6denxom:
-    resolution: {integrity: sha512-8F1z0YhDjKWqB29+AUh33OKr2Ts5PVUUogVXEVmmPipPDtj82iIQLbtBnR6xpWvmsw9mS3oD76EwBoUhHQgi6g==}
+  /@angular/cdk/17.0.1_5d654e6ccjownr4t7kb6denxom:
+    resolution: {integrity: sha512-0hrXm2D0s0/vUtDoLFRWTs75k5WY/hQmfnsaJXHeqinbE3eKOxmQxL1i7ymnMSQthEWzgRAhzS3Nfs7Alw3dQA==}
     peerDependencies:
       '@angular/common': ^17.0.0 || ^18.0.0
       '@angular/core': ^17.0.0 || ^18.0.0
@@ -6533,7 +6533,7 @@ packages:
       '@angular/router': ^17.0.0
     dependencies:
       '@angular/animations': 17.0.3_@angular+core@17.0.3
-      '@angular/cdk': 17.0.0_5d654e6ccjownr4t7kb6denxom
+      '@angular/cdk': 17.0.1_5d654e6ccjownr4t7kb6denxom
       '@angular/common': 17.0.3_on4u2y7yrmcwtuqi62kb42tsgy
       '@angular/core': 17.0.3_rxjs@7.8.1+zone.js@0.14.2
       '@angular/forms': 17.0.3_kv6dmumcfcd7okc2eznh2sdxqe
