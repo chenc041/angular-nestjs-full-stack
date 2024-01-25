@@ -39,8 +39,8 @@ dependencies:
     specifier: ^5.1.9
     version: 5.1.9
   ng-zorro-antd:
-    specifier: 17.0.1
-    version: 17.0.1(@angular/animations@17.0.4)(@angular/common@17.0.4)(@angular/core@17.0.4)(@angular/forms@17.0.4)(@angular/platform-browser@17.0.4)(@angular/router@17.0.4)(rxjs@7.8.1)
+    specifier: 17.1.0
+    version: 17.1.0(@angular/animations@17.0.4)(@angular/common@17.0.4)(@angular/core@17.0.4)(@angular/forms@17.0.4)(@angular/platform-browser@17.0.4)(@angular/router@17.0.4)(rxjs@7.8.1)
   rxjs:
     specifier: ~7.8.1
     version: 7.8.1
@@ -6523,8 +6523,8 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /ng-zorro-antd@17.0.1(@angular/animations@17.0.4)(@angular/common@17.0.4)(@angular/core@17.0.4)(@angular/forms@17.0.4)(@angular/platform-browser@17.0.4)(@angular/router@17.0.4)(rxjs@7.8.1):
-    resolution: {integrity: sha512-e3Riftf09XWqXBAraCVxVjNVck/nyBPmZtFlJOAMzjQPzhtjGJfUT33KdFuIulmIovv711669PBGNCK/T1TOBA==}
+  /ng-zorro-antd@17.1.0(@angular/animations@17.0.4)(@angular/common@17.0.4)(@angular/core@17.0.4)(@angular/forms@17.0.4)(@angular/platform-browser@17.0.4)(@angular/router@17.0.4)(rxjs@7.8.1):
+    resolution: {integrity: sha512-1lpknv5QXTeXk9k01GLbmxuXLyfRCGF91hVl3NF6Fedef7OJIstOmLy2VxvXoAQxrRyuYsDkEke2GJRC33mxhw==}
     peerDependencies:
       '@angular/animations': ^17.0.0
       '@angular/common': ^17.0.0
