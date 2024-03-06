@@ -9,8 +9,8 @@ dependencies:
     specifier: ^17.2.1
     version: 17.2.1(@angular/core@17.2.1)
   '@angular/cdk':
-    specifier: 17.2.0
-    version: 17.2.0(@angular/common@17.2.1)(@angular/core@17.2.1)(rxjs@7.8.1)
+    specifier: 17.2.1
+    version: 17.2.1(@angular/common@17.2.1)(@angular/core@17.2.1)(rxjs@7.8.1)
   '@angular/common':
     specifier: ^17.2.1
     version: 17.2.1(@angular/core@17.2.1)(rxjs@7.8.1)
@@ -317,8 +317,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@angular/cdk@17.2.0(@angular/common@17.2.1)(@angular/core@17.2.1)(rxjs@7.8.1):
-    resolution: {integrity: sha512-++qEQHzfUvccDw4IFimG9Ig7b4i9d64POUZ8H5cSflTiR3mBVZOlIhnRE/3PifYukoSetrkyedR8BDS6nwGxJQ==}
+  /@angular/cdk@17.2.1(@angular/common@17.2.1)(@angular/core@17.2.1)(rxjs@7.8.1):
+    resolution: {integrity: sha512-9cWV9MyWnpImns/WQApgoQBKblXA9Zx2CpCkDNipRgx9RyvGrvCLjpEfwQI4HjpPAQDI1trsbeJKihzgz4tFgw==}
     peerDependencies:
       '@angular/common': ^17.0.0 || ^18.0.0
       '@angular/core': ^17.0.0 || ^18.0.0
@@ -5419,7 +5419,7 @@ packages:
     dev: true
 
   /image-size@0.5.5:
-    resolution: {integrity: sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=}
+    resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     requiresBuild: true
@@ -6503,7 +6503,7 @@ packages:
       '@angular/router': ^17.0.0
     dependencies:
       '@angular/animations': 17.2.1(@angular/core@17.2.1)
-      '@angular/cdk': 17.2.0(@angular/common@17.2.1)(@angular/core@17.2.1)(rxjs@7.8.1)
+      '@angular/cdk': 17.2.1(@angular/common@17.2.1)(@angular/core@17.2.1)(rxjs@7.8.1)
       '@angular/common': 17.2.1(@angular/core@17.2.1)(rxjs@7.8.1)
       '@angular/core': 17.2.1(rxjs@7.8.1)(zone.js@0.14.4)
       '@angular/forms': 17.2.1(@angular/common@17.2.1)(@angular/core@17.2.1)(@angular/platform-browser@17.2.1)(rxjs@7.8.1)
@@ -8679,7 +8679,7 @@ packages:
     dev: false
 
   /uglify-to-browserify@1.0.2:
-    resolution: {integrity: sha1-bgkk1r2mta/jSeOabWMoUKD4grc=}
+    resolution: {integrity: sha512-vb2s1lYx2xBtUgy+ta+b2J/GLVUR+wmpINwHePmPRhOsIVCG2wDzKJ0n14GslH1BifsqVzSOwQhRaCAsZ/nI4Q==}
     requiresBuild: true
     dev: false
     optional: true
