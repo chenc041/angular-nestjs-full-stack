@@ -54,13 +54,13 @@ dependencies:
 devDependencies:
   '@angular-devkit/build-angular':
     specifier: ^17.2.0
-    version: 17.2.1(@angular/compiler-cli@17.2.3)(karma@6.4.3)(tailwindcss@3.4.1)(typescript@5.3.3)
+    version: 17.2.1(@angular/compiler-cli@17.2.3)(karma@6.4.3)(tailwindcss@3.4.1)(typescript@5.4.2)
   '@angular/cli':
     specifier: ~17.2.0
     version: 17.2.1
   '@angular/compiler-cli':
     specifier: ^17.2.1
-    version: 17.2.3(@angular/compiler@17.2.3)(typescript@5.3.3)
+    version: 17.2.3(@angular/compiler@17.2.3)(typescript@5.4.2)
   '@types/jasmine':
     specifier: ~5.1.4
     version: 5.1.4
@@ -101,8 +101,8 @@ devDependencies:
     specifier: ^3.4.1
     version: 3.4.1
   typescript:
-    specifier: ~5.3.3
-    version: 5.3.3
+    specifier: ~5.4.0
+    version: 5.4.2
   webpack-bundle-analyzer:
     specifier: ^4.10.1
     version: 4.10.1
@@ -140,7 +140,7 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular@17.2.1(@angular/compiler-cli@17.2.3)(karma@6.4.3)(tailwindcss@3.4.1)(typescript@5.3.3):
+  /@angular-devkit/build-angular@17.2.1(@angular/compiler-cli@17.2.3)(karma@6.4.3)(tailwindcss@3.4.1)(typescript@5.4.2):
     resolution: {integrity: sha512-Wq3ggliCMQCRVCucbjE4/9BJCN1KMSGfF6Bx1ke2B+vW3ElLt+M4x4Eeyg2dSPEYB7slgY9WOx7qtyOkUy15tQ==}
     engines: {node: ^18.13.0 || >=20.9.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -185,7 +185,7 @@ packages:
       '@angular-devkit/architect': 0.1702.1
       '@angular-devkit/build-webpack': 0.1702.1(webpack-dev-server@4.15.1)(webpack@5.90.1)
       '@angular-devkit/core': 17.2.1
-      '@angular/compiler-cli': 17.2.3(@angular/compiler@17.2.3)(typescript@5.3.3)
+      '@angular/compiler-cli': 17.2.3(@angular/compiler@17.2.3)(typescript@5.4.2)
       '@babel/core': 7.23.9
       '@babel/generator': 7.23.6
       '@babel/helper-annotate-as-pure': 7.22.5
@@ -196,7 +196,7 @@ packages:
       '@babel/preset-env': 7.23.9(@babel/core@7.23.9)
       '@babel/runtime': 7.23.9
       '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 17.2.1(@angular/compiler-cli@17.2.3)(typescript@5.3.3)(webpack@5.90.1)
+      '@ngtools/webpack': 17.2.1(@angular/compiler-cli@17.2.3)(typescript@5.4.2)(webpack@5.90.1)
       '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.0.12)
       ansi-colors: 4.1.3
       autoprefixer: 10.4.17(postcss@8.4.35)
@@ -227,7 +227,7 @@ packages:
       picomatch: 4.0.1
       piscina: 4.3.1
       postcss: 8.4.35
-      postcss-loader: 8.1.0(postcss@8.4.35)(typescript@5.3.3)(webpack@5.90.1)
+      postcss-loader: 8.1.0(postcss@8.4.35)(typescript@5.4.2)(webpack@5.90.1)
       resolve-url-loader: 5.0.0
       rxjs: 7.8.1
       sass: 1.70.0
@@ -239,7 +239,7 @@ packages:
       terser: 5.27.0
       tree-kill: 1.2.2
       tslib: 2.6.2
-      typescript: 5.3.3
+      typescript: 5.4.2
       undici: 6.6.2
       vite: 5.0.12(less@4.2.0)(sass@1.70.0)(terser@5.27.0)
       watchpack: 2.4.0
@@ -381,7 +381,7 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /@angular/compiler-cli@17.2.3(@angular/compiler@17.2.3)(typescript@5.3.3):
+  /@angular/compiler-cli@17.2.3(@angular/compiler@17.2.3)(typescript@5.4.2):
     resolution: {integrity: sha512-mATybangypneXwO270VQeIw3N0avzc2Lpvdb8nm9WZYj23AcTUzpUUKOn63HtJdwMT5J2GjkyZFSRXisiPmpkA==}
     engines: {node: ^18.13.0 || >=20.9.0}
     hasBin: true
@@ -397,7 +397,7 @@ packages:
       reflect-metadata: 0.2.1
       semver: 7.6.0
       tslib: 2.6.2
-      typescript: 5.3.3
+      typescript: 5.4.2
       yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
@@ -2492,7 +2492,7 @@ packages:
       call-bind: 1.0.7
     dev: true
 
-  /@ngtools/webpack@17.2.1(@angular/compiler-cli@17.2.3)(typescript@5.3.3)(webpack@5.90.1):
+  /@ngtools/webpack@17.2.1(@angular/compiler-cli@17.2.3)(typescript@5.4.2)(webpack@5.90.1):
     resolution: {integrity: sha512-5O493oqZw0os1Gj3otVTcIXS3nGs60eXZ9w3vsK5w7tZ5x6XqZvO00X8WZQhcxXA9HMG4iDCsU2ll3lcYZVxmg==}
     engines: {node: ^18.13.0 || >=20.9.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -2500,8 +2500,8 @@ packages:
       typescript: '>=5.2 <5.4'
       webpack: ^5.54.0
     dependencies:
-      '@angular/compiler-cli': 17.2.3(@angular/compiler@17.2.3)(typescript@5.3.3)
-      typescript: 5.3.3
+      '@angular/compiler-cli': 17.2.3(@angular/compiler@17.2.3)(typescript@5.4.2)
+      typescript: 5.4.2
       webpack: 5.90.1(esbuild@0.20.0)
     dev: true
 
@@ -3958,7 +3958,7 @@ packages:
       vary: 1.1.2
     dev: true
 
-  /cosmiconfig@9.0.0(typescript@5.3.3):
+  /cosmiconfig@9.0.0(typescript@5.4.2):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3971,7 +3971,7 @@ packages:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
-      typescript: 5.3.3
+      typescript: 5.4.2
     dev: true
 
   /critters@0.0.20:
@@ -7090,7 +7090,7 @@ packages:
       yaml: 2.3.4
     dev: true
 
-  /postcss-loader@8.1.0(postcss@8.4.35)(typescript@5.3.3)(webpack@5.90.1):
+  /postcss-loader@8.1.0(postcss@8.4.35)(typescript@5.4.2)(webpack@5.90.1):
     resolution: {integrity: sha512-AbperNcX3rlob7Ay7A/HQcrofug1caABBkopoFeOQMspZBqcqj6giYn1Bwey/0uiOPAcR+NQD0I2HC7rXzk91w==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -7103,7 +7103,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      cosmiconfig: 9.0.0(typescript@5.3.3)
+      cosmiconfig: 9.0.0(typescript@5.4.2)
       jiti: 1.21.0
       postcss: 8.4.35
       semver: 7.6.0
@@ -8660,8 +8660,8 @@ packages:
     resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
     dev: true
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.2:
+    resolution: {integrity: sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
