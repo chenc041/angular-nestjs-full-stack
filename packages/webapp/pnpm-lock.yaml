@@ -39,8 +39,8 @@ dependencies:
     specifier: ^5.1.15
     version: 5.1.15
   ng-zorro-antd:
-    specifier: 17.2.0
-    version: 17.2.0(@angular/animations@17.2.4)(@angular/common@17.2.4)(@angular/core@17.2.4)(@angular/forms@17.2.4)(@angular/platform-browser@17.2.4)(@angular/router@17.2.4)(rxjs@7.8.1)
+    specifier: 17.3.0
+    version: 17.3.0(@angular/animations@17.2.4)(@angular/common@17.2.4)(@angular/core@17.2.4)(@angular/forms@17.2.4)(@angular/platform-browser@17.2.4)(@angular/router@17.2.4)(rxjs@7.8.1)
   rxjs:
     specifier: ~7.8.1
     version: 7.8.1
@@ -1901,19 +1901,11 @@ packages:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
     dev: true
 
-  /@babel/runtime@7.23.2:
-    resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.14.0
-    dev: false
-
   /@babel/runtime@7.23.9:
     resolution: {integrity: sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
-    dev: true
 
   /@babel/template@7.24.0:
     resolution: {integrity: sha512-Bkf2q8lMB0AFpX0NFEqSbx1OkTHf0f+0j82mkw+ZpzBnkk7e9Ql0891vlfgi+kHwOk8tQjiQHpqh4LaSa0fKEA==}
@@ -4186,7 +4178,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.23.9
     dev: false
 
   /date-format@4.0.14:
@@ -6426,8 +6418,8 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /ng-zorro-antd@17.2.0(@angular/animations@17.2.4)(@angular/common@17.2.4)(@angular/core@17.2.4)(@angular/forms@17.2.4)(@angular/platform-browser@17.2.4)(@angular/router@17.2.4)(rxjs@7.8.1):
-    resolution: {integrity: sha512-D3NNK/JBumUZXK399eKUMFB+CJLMWeCJA4jX7bsqke09D0FKMDinkO3RFOfVffkeZrl7KrzRI2yALb/a1DvTrQ==}
+  /ng-zorro-antd@17.3.0(@angular/animations@17.2.4)(@angular/common@17.2.4)(@angular/core@17.2.4)(@angular/forms@17.2.4)(@angular/platform-browser@17.2.4)(@angular/router@17.2.4)(rxjs@7.8.1):
+    resolution: {integrity: sha512-dCJeNUlrPbR2izaHQuYg9GkCo0nY5PBQhjFyN+1Amj400udP6ussniyREe7otN+aVPX6dkVO8+UlsRgH5Gyakg==}
     peerDependencies:
       '@angular/animations': ^17.0.0
       '@angular/common': ^17.0.0
@@ -7508,13 +7500,8 @@ packages:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
     dev: true
 
-  /regenerator-runtime@0.14.0:
-    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
-    dev: false
-
   /regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
-    dev: true
 
   /regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
