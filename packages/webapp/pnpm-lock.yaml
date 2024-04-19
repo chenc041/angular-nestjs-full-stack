@@ -40,7 +40,7 @@ importers:
         version: 17.0.0(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(@angular/platform-browser@17.3.5(@angular/animations@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(rxjs@7.8.1)
       '@antv/g2':
         specifier: ^5.1.15
-        version: 5.1.18
+        version: 5.1.19
       ng-zorro-antd:
         specifier: 17.3.0
         version: 17.3.0(@angular/animations@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(@angular/forms@17.3.5(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(@angular/platform-browser@17.3.5(@angular/animations@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(rxjs@7.8.1))(@angular/platform-browser@17.3.5(@angular/animations@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(@angular/router@17.3.5(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(@angular/platform-browser@17.3.5(@angular/animations@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(@angular/common@17.3.5(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4))(rxjs@7.8.1))(@angular/core@17.3.5(rxjs@7.8.1)(zone.js@0.14.4)))(rxjs@7.8.1))(rxjs@7.8.1)
@@ -330,8 +330,8 @@ packages:
   '@antv/g-web-animations-api@2.0.2':
     resolution: {integrity: sha512-7zkbboSkSEGuUlpyD955KPriozbZ7dYSTPyUgkRdtmmeUrs+38wAfU1N0ZaQHT4rsTXupbsCxnXRfq03q/bEkA==}
 
-  '@antv/g2@5.1.18':
-    resolution: {integrity: sha512-i8uK3S4y25rwdZMlF1Ut5A/SWRg5XNQ5EwiX4jLzAQkBBiMc3OWk98JYMUYodFQtlTT2xFdNzCTvV+rUPtSzjg==}
+  '@antv/g2@5.1.19':
+    resolution: {integrity: sha512-sVzxgAm6DE65wRQpZ3O+OaRlCjESC12oT2Rle6Cifb80dC6LDjZ4aBT9O90QCYibCJj6WCTrDQSasi+7ALo7MA==}
 
   '@antv/g@6.0.2':
     resolution: {integrity: sha512-ZCpxUtU4JU1PIh2bDUlcnqLd8zJ2bOdx4EHYYTgUfMwu/hL2p/OYzg26A2qj91FL00JuZNEXVZdKAy5tm8jzmw==}
@@ -5286,7 +5286,7 @@ snapshots:
       '@antv/util': 3.3.7
       tslib: 2.6.2
 
-  '@antv/g2@5.1.18':
+  '@antv/g2@5.1.19':
     dependencies:
       '@antv/component': 2.0.0
       '@antv/coord': 0.4.7
