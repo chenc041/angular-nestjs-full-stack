@@ -42,8 +42,8 @@ importers:
         specifier: ^5.1.15
         version: 5.1.20
       ng-zorro-antd:
-        specifier: 17.4.0
-        version: 17.4.0(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/forms@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/router@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(rxjs@7.8.1)
+        specifier: 17.4.1
+        version: 17.4.1(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/forms@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/router@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(rxjs@7.8.1)
       rxjs:
         specifier: ~7.8.1
         version: 7.8.1
@@ -2844,6 +2844,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -3446,8 +3447,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  ng-zorro-antd@17.4.0:
-    resolution: {integrity: sha512-jlYfhIjWVwOJnwcvk27AuBnyzmXh8NA/OwdoU4AjfHN/8OBFnnoAsHQ7Qkh/IOgmshfvbNmeEjFgIdeSkX0vDg==}
+  ng-zorro-antd@17.4.1:
+    resolution: {integrity: sha512-KsMYFlRBFPK5FPPoaYIS/uzQ4400WFMLcA9/1LmYZcSgmeINlCvgfiitNcOVLsRyQYlpdIQyOo9z5Ue2SS9ypg==}
     peerDependencies:
       '@angular/animations': ^17.0.0
       '@angular/common': ^17.0.0
@@ -4039,6 +4040,7 @@ packages:
   read-package-json@7.0.1:
     resolution: {integrity: sha512-8PcDiZ8DXUjLf687Ol4BR8Bpm2umR7vhoZOzNRt+uxD9GpBh/K+CAAALVIiYFknmvlmyg7hM7BSNUXPaCCqd0Q==}
     engines: {node: ^16.14.0 || >=18.0.0}
+    deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
 
   readable-stream@2.3.8:
     resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
@@ -8744,7 +8746,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  ? ng-zorro-antd@17.4.0(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/forms@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/router@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(rxjs@7.8.1)
+  ? ng-zorro-antd@17.4.1(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/forms@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/router@17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(@angular/platform-browser@17.3.8(@angular/animations@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5)))(rxjs@7.8.1))(rxjs@7.8.1)
   : dependencies:
       '@angular/animations': 17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))
       '@angular/cdk': 17.3.8(@angular/common@17.3.8(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1))(@angular/core@17.3.8(rxjs@7.8.1)(zone.js@0.14.5))(rxjs@7.8.1)
@@ -9364,7 +9366,7 @@ snapshots:
 
   regenerator-transform@0.15.2:
     dependencies:
-      '@babel/runtime': 7.24.0
+      '@babel/runtime': 7.24.5
 
   regex-parser@2.3.0: {}
 
