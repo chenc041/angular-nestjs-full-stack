@@ -56,13 +56,13 @@ importers:
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ^18.0.0
-        version: 18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2))(@types/node@20.14.10)(chokidar@3.6.0)(karma@6.4.3)(tailwindcss@3.4.4)(typescript@5.5.2)
+        version: 18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3))(@types/node@20.14.10)(chokidar@3.6.0)(karma@6.4.3)(tailwindcss@3.4.4)(typescript@5.5.3)
       '@angular/cli':
         specifier: ~18.1.0
         version: 18.1.0(chokidar@3.6.0)
       '@angular/compiler-cli':
         specifier: ^18.0.0
-        version: 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2)
+        version: 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3)
       '@types/jasmine':
         specifier: ~5.1.4
         version: 5.1.4
@@ -104,7 +104,7 @@ importers:
         version: 3.4.4
       typescript:
         specifier: ~5.5.0
-        version: 5.5.2
+        version: 5.5.3
       webpack-bundle-analyzer:
         specifier: ^4.10.1
         version: 4.10.2
@@ -4884,8 +4884,8 @@ packages:
   typed-assert@1.0.9:
     resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
 
-  typescript@5.5.2:
-    resolution: {integrity: sha512-NcRtPEOsPFFWjobJEtfihkLCZCXZt/os3zf8nTxjVH3RvTSxjrCamJpbExGvYOF+tFHc3pA65qpdwPbzjohhew==}
+  typescript@5.5.3:
+    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -5239,14 +5239,14 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-angular@18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2))(@types/node@20.14.10)(chokidar@3.6.0)(karma@6.4.3)(tailwindcss@3.4.4)(typescript@5.5.2)':
+  '@angular-devkit/build-angular@18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3))(@types/node@20.14.10)(chokidar@3.6.0)(karma@6.4.3)(tailwindcss@3.4.4)(typescript@5.5.3)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.1801.0(chokidar@3.6.0)
       '@angular-devkit/build-webpack': 0.1801.0(chokidar@3.6.0)(webpack-dev-server@5.0.4(webpack@5.92.1))(webpack@5.92.1(esbuild@0.21.5))
       '@angular-devkit/core': 18.1.0(chokidar@3.6.0)
-      '@angular/build': 18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2))(@types/node@20.14.10)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(tailwindcss@3.4.4)(terser@5.29.2)(typescript@5.5.2)
-      '@angular/compiler-cli': 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2)
+      '@angular/build': 18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3))(@types/node@20.14.10)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(tailwindcss@3.4.4)(terser@5.29.2)(typescript@5.5.3)
+      '@angular/compiler-cli': 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3)
       '@babel/core': 7.24.7
       '@babel/generator': 7.24.7
       '@babel/helper-annotate-as-pure': 7.24.7
@@ -5257,7 +5257,7 @@ snapshots:
       '@babel/preset-env': 7.24.7(@babel/core@7.24.7)
       '@babel/runtime': 7.24.7
       '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2))(typescript@5.5.2)(webpack@5.92.1(esbuild@0.21.5))
+      '@ngtools/webpack': 18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3))(typescript@5.5.3)(webpack@5.92.1(esbuild@0.21.5))
       '@vitejs/plugin-basic-ssl': 1.1.0(vite@5.3.2(@types/node@20.14.10)(less@4.2.0)(sass@1.77.6)(terser@5.29.2))
       ansi-colors: 4.1.3
       autoprefixer: 10.4.19(postcss@8.4.38)
@@ -5286,7 +5286,7 @@ snapshots:
       picomatch: 4.0.2
       piscina: 4.6.1
       postcss: 8.4.38
-      postcss-loader: 8.1.1(postcss@8.4.38)(typescript@5.5.2)(webpack@5.92.1(esbuild@0.21.5))
+      postcss-loader: 8.1.1(postcss@8.4.38)(typescript@5.5.3)(webpack@5.92.1(esbuild@0.21.5))
       resolve-url-loader: 5.0.0
       rxjs: 7.8.1
       sass: 1.77.6
@@ -5297,7 +5297,7 @@ snapshots:
       terser: 5.29.2
       tree-kill: 1.2.2
       tslib: 2.6.3
-      typescript: 5.5.2
+      typescript: 5.5.3
       undici: 6.19.2
       vite: 5.3.2(@types/node@20.14.10)(less@4.2.0)(sass@1.77.6)(terser@5.29.2)
       watchpack: 2.4.1
@@ -5363,11 +5363,11 @@ snapshots:
       '@angular/core': 18.0.2(rxjs@7.8.1)(zone.js@0.14.7)
       tslib: 2.6.2
 
-  '@angular/build@18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2))(@types/node@20.14.10)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(tailwindcss@3.4.4)(terser@5.29.2)(typescript@5.5.2)':
+  '@angular/build@18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3))(@types/node@20.14.10)(chokidar@3.6.0)(less@4.2.0)(postcss@8.4.38)(tailwindcss@3.4.4)(terser@5.29.2)(typescript@5.5.3)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.1801.0(chokidar@3.6.0)
-      '@angular/compiler-cli': 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2)
+      '@angular/compiler-cli': 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3)
       '@babel/core': 7.24.7
       '@babel/helper-annotate-as-pure': 7.24.7
       '@babel/helper-split-export-declaration': 7.24.7
@@ -5390,7 +5390,7 @@ snapshots:
       rollup: 4.18.0
       sass: 1.77.6
       semver: 7.6.2
-      typescript: 5.5.2
+      typescript: 5.5.3
       undici: 6.19.2
       vite: 5.3.2(@types/node@20.14.10)(less@4.2.0)(sass@1.77.6)(terser@5.29.2)
       watchpack: 2.4.1
@@ -5446,7 +5446,7 @@ snapshots:
       rxjs: 7.8.1
       tslib: 2.6.2
 
-  '@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2)':
+  '@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3)':
     dependencies:
       '@angular/compiler': 18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7))
       '@babel/core': 7.24.4
@@ -5456,7 +5456,7 @@ snapshots:
       reflect-metadata: 0.2.2
       semver: 7.6.2
       tslib: 2.6.2
-      typescript: 5.5.2
+      typescript: 5.5.3
       yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
@@ -6836,10 +6836,10 @@ snapshots:
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
 
-  '@ngtools/webpack@18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2))(typescript@5.5.2)(webpack@5.92.1(esbuild@0.21.5))':
+  '@ngtools/webpack@18.1.0(@angular/compiler-cli@18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3))(typescript@5.5.3)(webpack@5.92.1(esbuild@0.21.5))':
     dependencies:
-      '@angular/compiler-cli': 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.2)
-      typescript: 5.5.2
+      '@angular/compiler-cli': 18.0.2(@angular/compiler@18.0.2(@angular/core@18.0.2(rxjs@7.8.1)(zone.js@0.14.7)))(typescript@5.5.3)
+      typescript: 5.5.3
       webpack: 5.92.1(esbuild@0.21.5)
 
   '@nodelib/fs.scandir@2.1.5':
@@ -7793,14 +7793,14 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cosmiconfig@9.0.0(typescript@5.5.2):
+  cosmiconfig@9.0.0(typescript@5.5.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.5.2
+      typescript: 5.5.3
 
   critters@0.0.24:
     dependencies:
@@ -9720,9 +9720,9 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.39
 
-  postcss-loader@8.1.1(postcss@8.4.38)(typescript@5.5.2)(webpack@5.92.1(esbuild@0.21.5)):
+  postcss-loader@8.1.1(postcss@8.4.38)(typescript@5.5.3)(webpack@5.92.1(esbuild@0.21.5)):
     dependencies:
-      cosmiconfig: 9.0.0(typescript@5.5.2)
+      cosmiconfig: 9.0.0(typescript@5.5.3)
       jiti: 1.21.6
       postcss: 8.4.38
       semver: 7.6.2
@@ -10706,7 +10706,7 @@ snapshots:
 
   typed-assert@1.0.9: {}
 
-  typescript@5.5.2: {}
+  typescript@5.5.3: {}
 
   ua-parser-js@0.7.37: {}
 
