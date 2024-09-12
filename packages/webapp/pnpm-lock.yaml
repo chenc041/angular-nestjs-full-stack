@@ -42,8 +42,8 @@ importers:
         specifier: ^5.1.15
         version: 5.2.2
       ng-zorro-antd:
-        specifier: 18.1.0
-        version: 18.1.0(5uxyyr7qpz6qojrcrnipqgmexe)
+        specifier: 18.1.1
+        version: 18.1.1(5uxyyr7qpz6qojrcrnipqgmexe)
       rxjs:
         specifier: ~7.8.1
         version: 7.8.1
@@ -3635,8 +3635,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  ng-zorro-antd@18.1.0:
-    resolution: {integrity: sha512-0G9ZAK+Z6XYQXE9uCu+PSevOt+s4YzddLS2Wm6xXHlzm8z3PctUWgTaqlKpxYown7KWDV212uPejokcsaiOuQg==}
+  ng-zorro-antd@18.1.1:
+    resolution: {integrity: sha512-YbJN/87XGsKbAwBJH7ci/01Y30QCwJsQU8FtVhtAd5JsB/NsBAfYfsIoPgch6ZUPZ3Jo2+3UA/pTCx1DliagHg==}
     peerDependencies:
       '@angular/animations': ^18.0.0
       '@angular/common': ^18.0.0
@@ -9233,7 +9233,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  ng-zorro-antd@18.1.0(5uxyyr7qpz6qojrcrnipqgmexe):
+  ng-zorro-antd@18.1.1(5uxyyr7qpz6qojrcrnipqgmexe):
     dependencies:
       '@angular/animations': 18.2.4(@angular/core@18.2.4(rxjs@7.8.1)(zone.js@0.14.10))
       '@angular/cdk': 18.1.4(@angular/common@18.2.4(@angular/core@18.2.4(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1))(@angular/core@18.2.4(rxjs@7.8.1)(zone.js@0.14.10))(rxjs@7.8.1)
@@ -9849,7 +9849,7 @@ snapshots:
 
   regenerator-transform@0.15.2:
     dependencies:
-      '@babel/runtime': 7.24.7
+      '@babel/runtime': 7.25.0
 
   regex-parser@2.3.0: {}
 
