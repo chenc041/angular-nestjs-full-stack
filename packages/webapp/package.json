@@ -23,7 +23,7 @@
     "@angular/router": "^18.0.0",
     "@ant-design/icons-angular": "^18.0.0",
     "@antv/g2": "^5.1.15",
-    "ng-zorro-antd": "18.1.0",
+    "ng-zorro-antd": "18.2.1",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.15.0"
